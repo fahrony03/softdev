@@ -1,6 +1,6 @@
 # Kelompok 01
 
-#Syntax-syntax buat cmd
+# Syntax-syntax buat cmd
 1. composer global require laravel/installer = buat install laravel
 
 2. laravel new example-app = buat folder yang mau diinstal laravel
