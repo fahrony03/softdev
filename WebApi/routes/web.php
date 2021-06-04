@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\BackendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,7 @@ use App\Http\Controllers\FrontendController;
 //});
 
 Route::get('/', [FrontendController ::class, 'index']);
+
+Route::get('/admin', function () {
+    return view('backend/layouts/dashboard');
+});
