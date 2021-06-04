@@ -21,6 +21,6 @@ use App\Http\Controllers\BackendController;
 
 Route::get('/', [FrontendController ::class, 'index']);
 
-Route::get('/admin', function () {
-    return view('backend/layouts/dashboard');
+Route::get('/sadmin', function () {
+    return view('backend/dashboard');
 });
