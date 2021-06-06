@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\BackendController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,13 @@ Route::get('/', [FrontendController ::class, 'index']);
 Route::get('/sadmin', function () {
     return view('backend/dashboard');
 });
+
+Route::get('/login', function () {
+    return view('backend/auth/login');
+});
+
+Route::get('/datapengguna', function () {
+    return view('backend/layouts/datapengguna');
+});
+
+Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
