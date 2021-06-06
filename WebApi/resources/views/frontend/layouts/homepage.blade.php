@@ -31,6 +31,9 @@
                         <a class="nav-link js-scroll-trigger" href=" #">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
+                        <a class="nav-link js-scroll-trigger" href="#belanja">Belanja</a>
+                    </li>
+                    <li class="nav-item ">
                         <a class="nav-link js-scroll-trigger" href="#informasi">Informasi</a>
                     </li>
                     <li class="nav-item ">
