@@ -20,7 +20,14 @@ use App\Http\Controllers\LoginController;
 //    return view('welcome');
 //});
 
+//frontent view controller
 Route::get('/', [FrontendController ::class, 'index']);
+Route::get('/informasi', [FrontendController ::class, 'informasi']);
+Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
+Route::get('/contact', [FrontendController ::class, 'contact']);
+
+
+
 
 Route::get('/sadmin', function () {
     return view('backend/dashboard');
