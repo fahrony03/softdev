@@ -94,25 +94,25 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <a class="navbar-brand text-dark" href="https://chat.whatsapp.com/Kb1NTOu8YlNJRbVjuu7fvb" target="_blank">
-                                            <img src="../img/whatsapp.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                                            <img src="{{asset('assets/img/whatsapp.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                                             Contact Via WhatsApp
                                         </a>
                                     </li>
                                     <li>
                                         <a class="navbar-brand text-dark" href="https://www.instagram.com/mchfahrony/" target="_blank" >
-                                            <img src="../img/instagram.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                                            <img src="{{asset('assets/img/instagram.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                                             Contact Via Instagram
                                         </a>
                                     </li>
                                     <li>
                                         <a class="navbar-brand text-dark" href="https://twitter.com/mchfahrony" target="_blank">
-                                            <img src="../img/twitter.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                                            <img src="{{asset('assets/img/twitter.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                                             Contact Via Twitter
                                         </a>
                                     </li>
                                     <li>
                                         <a class="navbar-brand text-dark" href="mailto:sipekabondowoso@gmail.com?subject=kepada%20developer%20Si%20PEKA%20" target="_blank" >
-                                            <img src="../img/gmail.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                                            <img src="{{asset('assets/img/gmail.png')}}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                                             Contact Via Gmail
                                         </a>
                                     </li>
