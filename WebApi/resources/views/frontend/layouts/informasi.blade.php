@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="judul-card">
-        <h1 class="display-4">Informasi Penanaman</h1>
+        <h1 class="display-4">Informasi Pertanian</h1>
         <hr>
     </div>
 
