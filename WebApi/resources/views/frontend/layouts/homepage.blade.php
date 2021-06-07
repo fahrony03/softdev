@@ -23,18 +23,21 @@
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
+        <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="admin/menu/informasi/images/" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
+                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
                             <a href="menu/auth/login.php" class="btn btn-outline-success">Baca</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
@@ -49,21 +52,21 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/sawi.jpeg" class="d-block w-100" alt="...">
+                        <img src="{{asset('assets/img/cover.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/sawi.jpeg" class="d-block w-100" alt="...">
+                        <img src="im{{asset('assets/img/cov.jpeg')}}g/sawi.jpeg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/sawi.jpeg" class="d-block w-100" alt="...">
+                        <img src="{{asset('assets/img/cov1.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
