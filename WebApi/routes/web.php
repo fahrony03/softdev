@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\PenggunaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +20,7 @@ use App\Http\Controllers\PenggunaController;
 //    return view('welcome');
 //});
 
-//frontent view controller
+//frontend view controller
 Route::get('/', [FrontendController ::class, 'index']);
 Route::get('/informasi', [FrontendController ::class, 'informasi']);
 Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
