@@ -42,6 +42,3 @@ Route::get('/sadmin', function () {
 Route::get('/login', function () {
     return view('backend/auth/login');
 });
-
-//Controller pengguna/user
-Route::resource('penggunas', PenggunaController::class);
