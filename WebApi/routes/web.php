@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PenggunaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,6 @@ Route::get('/sadmin', function () {
 Route::get('/login', function () {
     return view('backend/auth/login');
 });
+
+//Controller pengguna/user
+Route::resource('penggunas', PenggunaController::class);
