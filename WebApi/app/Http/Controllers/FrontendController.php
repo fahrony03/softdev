@@ -25,4 +25,8 @@ class FrontendController extends Controller
     public function contact(){
         return view('frontend.layouts.contact');
     }
+
+    public function detail_informasi(){
+        return view('frontend.layouts.detail_informasi');
+    }
 }

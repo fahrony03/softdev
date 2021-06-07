@@ -26,6 +26,7 @@ Route::get('/informasi', [FrontendController ::class, 'informasi']);
 Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
 Route::get('/produk', [FrontendController ::class, 'produk']);
 Route::get('/contact', [FrontendController ::class, 'contact']);
+Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
 
 
 
