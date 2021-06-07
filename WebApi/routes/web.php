@@ -23,7 +23,7 @@ use App\Http\Controllers\LoginController;
 //frontent view controller
 Route::get('/', [FrontendController ::class, 'index']);
 Route::get('/informasi', [FrontendController ::class, 'informasi']);
-Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
+Route::get('/produk', [FrontendController ::class, 'produk']);
 Route::get('/contact', [FrontendController ::class, 'contact']);
 
 

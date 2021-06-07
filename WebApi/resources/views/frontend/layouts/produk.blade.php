@@ -4,13 +4,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="../../img/cov1.jpeg" alt="First slide">
+                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../../img/cov2.jpeg" alt="Second slide">
+                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../../img/cov3.jpeg" alt="Third slide">
+                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -33,7 +33,7 @@
         <div class="row row-cols-1 row-cols-md-3">
             <div class="col mb-4">
                 <div class="card h-100">
-                    <img src="../../img/penanaman/wortel.png" class="card-img-top" alt="...">
+                    <img src="{{asset('assets/img/sayur 4.jpg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Wortel Organik segar 1 kilogram</h5>
                         <span class="badge badge-success">discount 50%</span>
