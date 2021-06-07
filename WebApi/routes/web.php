@@ -28,19 +28,16 @@ Route::get('/produk', [FrontendController ::class, 'produk']);
 Route::get('/contact', [FrontendController ::class, 'contact']);
 Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
 
+//backend admin view controller
+Route::get('/sadmin', [BackendController ::class, 'home']);
+Route::get('/user', [BackendController ::class, 'user']);
 
-
-
+//akses admin
 Route::get('/sadmin', function () {
-    return view('backend/dashboard');
+    return view('backend/home');
 });
 
+//akses login
 Route::get('/login', function () {
     return view('backend/auth/login');
 });
-
-Route::get('/datapengguna', function () {
-    return view('backend/layouts/datapengguna');
-});
-
-Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
