@@ -37,7 +37,7 @@
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                        <a href="menu/auth/login.php" class="btn btn-outline-success">Baca</a>
+                        <a href="/detail_informasi" class="btn btn-outline-success">Baca</a>
                     </div>
                 </div>
             </div>
