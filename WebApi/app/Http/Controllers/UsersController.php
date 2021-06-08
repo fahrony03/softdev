@@ -17,19 +17,19 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //$users = Users::orderBy('time','DESC')->get();
-        //$response = [
-        //    'massage'=>'List created ordered by time',
-        //    'data'=> $users
-        //];
-        //return response()->json($response, Response::HTTP_OK);
-
-        $users=[
-            'title' => "Halaman Menajemen User",
-            'subtitle' => 'Halaman Crud User',
-            'user' => Users::orderBy('id', 'desc')->get(),
+        $users = Users::orderBy('time','DESC')->get();
+        $response = [
+        'massage'=>'List created ordered by time',
+        'data'=> $users
         ];
-        return view('backend.user', compact('data'));
+        return response()->json($response, Response::HTTP_OK);
+
+        // $users=[
+        //     'title' => "Halaman Menajemen User",
+        //     'subtitle' => 'Halaman Crud User',
+        //     'user' => Users::orderBy('id', 'desc')->get(),
+        // ];
+        // return view('backend.user', compact('data'));
     }
 
     /**
