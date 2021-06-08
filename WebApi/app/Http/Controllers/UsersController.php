@@ -24,7 +24,7 @@ class UsersController extends Controller
         //];
         //return response()->json($response, Response::HTTP_OK);
 
-        $data=[
+        $users=[
             'title' => "Halaman Menajemen User",
             'subtitle' => 'Halaman Crud User',
             'user' => Users::orderBy('id', 'desc')->get(),
