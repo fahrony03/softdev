@@ -1,5 +1,4 @@
 @extends('backend.layouts.sadmin')
-@section('name', 'Semua Post')
 @section('content')
 
 <div class="content-wrapper">
@@ -43,9 +42,8 @@
                     </thead>
                     <tbody>
                       <tr>
-                        @foreach ($data['user'] as $item)
-                          <td>{{ $item->name }}</td>
-                          <td>{{ $item->username }}</td>
+                          <td></td>
+                          <td></td>
                           <td></td>
                           <td></td>
                           <td>
@@ -55,7 +53,6 @@
                               <a type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
                               </div>
                           </td>
-                          @endforeach
                         </tr>
                     </tbody>
                 </table>
