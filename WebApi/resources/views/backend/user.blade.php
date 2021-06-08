@@ -42,20 +42,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>td>
-                                            <td>
-                                                <div class="btn-group" role="group" aria-label="Basic example">
-                                                    <a type="button" class="btn btn-info" data-toggle="edit-kiri" data-placement="left" title="Detail data" ><i class="fas fa-info"></i></a>
-                                                    <a type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
-                                                    <a type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                   
+                      <tr>
+                        @foreach ($data['user'] as $item)
+                          <td>{{ $item->name }}</td>
+                          <td>{{ $item->username }}</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <a type="button" class="btn btn-info" data-toggle="edit-kiri" data-placement="left" title="Detail data" ><i class="fas fa-info"></i></a>
+                              <a type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
+                              <a type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
+                              </div>
+                          </td>
+                          @endforeach
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -30,7 +30,7 @@ Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']
 
 //backend admin view controller
 Route::get('/sadmin', [BackendController ::class, 'home']);
-Route::get('/user', [BackendController ::class, 'user']);
+//Route::get('/user', [BackendController ::class, 'user']);
 
 //akses admin
 Route::get('/sadmin', function () {
@@ -41,3 +41,5 @@ Route::get('/sadmin', function () {
 Route::get('/login', function () {
     return view('backend/auth/login');
 });
+
+Route::get('/user', 'UsersController@index')->name('user');

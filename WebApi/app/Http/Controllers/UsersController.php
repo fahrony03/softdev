@@ -6,6 +6,7 @@ use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Response;
+use App\Models\Users;
 
 class UsersController extends Controller
 {
@@ -16,12 +17,19 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = Users::orderBy('time','DESC')->get();
-        $response = [
-            'massage'=>'List created ordered by time',
-            'data'=> $users
+        //$users = Users::orderBy('time','DESC')->get();
+        //$response = [
+        //    'massage'=>'List created ordered by time',
+        //    'data'=> $users
+        //];
+        //return response()->json($response, Response::HTTP_OK);
+
+        $data=[
+            'title' => "Halaman Menajemen User",
+            'subtitle' => 'Halaman Crud User',
+            'user' => Users::orderBy('id', 'desc')->get(),
         ];
-        return response()->json($response, Response::HTTP_OK);
+        return view('backend.user', compact('data'));
     }
 
     /**
