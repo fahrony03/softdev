@@ -40,6 +40,40 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
+          <div class="col-lg-4 col-md-12">
+
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0">User</h5>
+              </div>
+              <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                  <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
+                  aria-expanded="false">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  <span class="counter text-purple">Ada 869 User Online</span>
+              </a>
+            </ul>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0">User</h5>
+              </div>
+              <ul class="list-inline two-part d-flex align-items-center mb-0">
+                <li>
+                  <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
+                  aria-expanded="false">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  <span class="counter text-purple">Ada 869 User Online</span>
+              </a>
+            </ul>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
           <!-- /.col-md-6 -->
         </div>
         <!-- /.row -->
