@@ -9,12 +9,12 @@
 		<fieldset>
 		<div>
 			<label for="nama">Nama: </label>
-			<input type="text" class="form-control form-control-user"  name="nama" placeholder="Isi Nama Lengkap" 
-            required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/> 
+			<input type="text" class="form-control form-control-user"  name="nama" placeholder="Isi Nama Lengkap"
+            required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/>
 		</div>
 		<div>
 			<label for="alamat">Alamat: </label>
-			<input type="text" class="form-control form-control-user"  name="alamat" placeholder="Isi Alamat Lengkap" 
+			<input type="text" class="form-control form-control-user"  name="alamat" placeholder="Isi Alamat Lengkap"
             required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/>
 		</div>
         <div>
@@ -30,9 +30,9 @@
         <div>
         	<input type="submit" class="btn btn-success btn-lg btn-block" value="Daftar" name="daftar" />
 		</div>
-		
+
 		</fieldset>
-	
+
 	</form>
     <br>
                 <div class="text-center">
