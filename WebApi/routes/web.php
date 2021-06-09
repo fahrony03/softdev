@@ -5,6 +5,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\PegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,7 @@ Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']
 //backend admin view controller
 Route::get('/sadmin', [BackendController ::class, 'home']);
 Route::get('/user', [BackendController ::class, 'user']);
+// Route::get('user', 'UsersController@index')->name('user');
 
 //akses admin
 Route::get('/sadmin', function () {
@@ -43,4 +45,4 @@ Route::get('/login', function () {
     return view('backend/auth/login');
 });
 
-//Route::get('/user', 'UsersController@index')->name('user');
+Route::get('/data-pegawai', 'PegawaiController@index')->name('data-pegawai');
