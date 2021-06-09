@@ -40,7 +40,7 @@ Route::get('/user', [BackendController ::class, 'user']);
 
 //akses login
 Route::get('/login', function () {
-    return view('backend/auth/login');
+    return view('pengguna.login');
 });
 
 Route::get('/data-pegawai', 'PegawaiController@index')->name('data-pegawai');
