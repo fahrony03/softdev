@@ -42,9 +42,14 @@ Route::get('/sadmin', function () {
 
 //akses login
 Route::get('/login', function () {
-    return view('backend/auth/login');
+    return view('pengguna.login');
 });
 
 Route::get('/data-pegawai', 'PegawaiController@index')->name('data-pegawai');
 
 Route::get('/dataproduk', 'ProdukController@index')->name('dataproduk');
+
+
+
+
+
