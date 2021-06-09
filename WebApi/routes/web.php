@@ -46,3 +46,11 @@ Route::get('/login', function () {
 });
 
 Route::get('/data-pegawai', 'PegawaiController@index')->name('data-pegawai');
+
+//route user
+Route::get('/pengguna', 'PenggunaController@index')->name('pengguna');
+Route::get('/tambahpengguna', 'PenggunaController@create')->name('tambahpengguna');
+Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
+Route::get('/editpengguna/{id}', 'PenggunaController@edit')->name('editpengguna');
+Route::post('/updatepengguna/{id}', 'PenggunaController@update')->name('updatepengguna');
+Route::get('/hapuspengguna/{id}', 'PenggunaController@destroy')->name('hapuspengguna');
