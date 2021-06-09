@@ -1,7 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
-    <div class="container" style="padding-top:40px; padding-bottom:40px;">
-        <div class="card">
+<div class="container" style="padding-top:40px; padding-bottom:40px; padding-right:115px; padding-left:100px">
+    <div class="card">
             <div class="card-body">
                 <h1 ><b>Contact admin</b></h1>
                 <div class="form">
