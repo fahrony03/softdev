@@ -218,7 +218,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="/pengguna" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Pengguna</p>
+                  <p>Komentar Pengguna</p>
                 </a>
               </li>
             </ul>

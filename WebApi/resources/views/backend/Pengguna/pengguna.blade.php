@@ -34,9 +34,9 @@
                     <thead>
                         <tr>
                             <th>NAME</th>
-                            <th>USERNAME</th>
-                            <th>Email</th>
-                            <th>PASSWORD</th>
+                            <th>ALAMAT</th>
+                            <th>NO TELP</th>
+                            <th>KOMENTAR</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>

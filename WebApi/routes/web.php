@@ -31,14 +31,12 @@ Route::get('/contact', [FrontendController ::class, 'contact']);
 Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
 
 //backend admin view controller
-Route::get('/sadmin', [BackendController ::class, 'home']);
+// Route::get('/sadmin', [BackendController ::class, 'home']);
 Route::get('/user', [BackendController ::class, 'user']);
 // Route::get('user', 'UsersController@index')->name('user');
 
 //akses admin
-Route::get('/sadmin', function () {
-    return view('backend/home');
-});
+
 
 //akses login
 Route::get('/login', function () {
@@ -54,3 +52,10 @@ Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna
 Route::get('/editpengguna/{id}', 'PenggunaController@edit')->name('editpengguna');
 Route::post('/updatepengguna/{id}', 'PenggunaController@update')->name('updatepengguna');
 Route::get('/hapuspengguna/{id}', 'PenggunaController@destroy')->name('hapuspengguna');
+
+//login
+Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/sadmin', 'BackendController@index');
+});
