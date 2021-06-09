@@ -63,7 +63,8 @@ class PenggunaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $peng = Pengguna::findorfail($id);
+        return view('backend.pengguna.editpengguna', compact('peng'));
     }
 
     /**
@@ -75,7 +76,9 @@ class PenggunaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $peng = Pengguna::findorfail($id);
+        $peng->update($request->all());
+        return redirect('pengguna');
     }
 
     /**
@@ -86,6 +89,8 @@ class PenggunaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $peng = Pengguna::findorfail($id);
+        $peng->delete();
+        return redirect('pengguna');
     }
 }
