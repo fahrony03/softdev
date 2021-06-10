@@ -14,4 +14,10 @@ class LoginController extends Controller
         }
         return redirect('/login');
     }
+
+    function index(Request $req)
+    {
+        $req->session()->put('data', $req->input());
+        return
+    }
 }
