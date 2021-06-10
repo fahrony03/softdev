@@ -23,12 +23,7 @@ use App\Http\Controllers\PegawaiController;
 //});
 
 //frontend view controller
-Route::get('/', [FrontendController ::class, 'index']);
-Route::get('/informasi', [FrontendController ::class, 'informasi']);
-Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
-Route::get('/produk', [FrontendController ::class, 'produk']);
-Route::get('/contact', [FrontendController ::class, 'contact']);
-Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
+Route::get('/', 'FrontendController@index');
 
 //backend admin view controller
 Route::get('/sadmin', [BackendController ::class, 'home']);
@@ -61,6 +56,15 @@ Route::post('/simpandokumentasi', 'DokumentasiController@store')->name('simpando
 //login
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
 
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::get('/sadmin', 'BackendController@index');
+});
+
+Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
+    Route::get('/homepage', [FrontendController ::class, 'homepage']);
+    Route::get('/informasi', [FrontendController ::class, 'informasi']);
+    Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
+    Route::get('/produk', [FrontendController ::class, 'produk']);
+    Route::get('/contact', [FrontendController ::class, 'contact']);
+    Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
 });
