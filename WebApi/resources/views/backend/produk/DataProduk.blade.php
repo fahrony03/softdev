@@ -28,12 +28,13 @@
         <div class="col-lg-12">
             <div class="shadow p-3 mb-4 bg-white rounded">
                 <div class="pb-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahproduk"><i class="fas fa-plus"></i> Tambah Data</button>
+                    <a href="/tambahproduk" class="btn btn-primary"><i class="fas fa-plus"></i>Tambah data</a>
                 </div>
                 <table id="datapengguna" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
                             <th>Nama Produk</th>
+                            <th>Sampul</th>
                             <th>Deskripsi</th>
                             <th>Berat</th>
                             <th>Stok</th>
@@ -44,6 +45,7 @@
                     @foreach ($dtProduk as $item)
                         <tr>
                             <td>{{ $item->namaproduk}}</td>
+                            <td>{{ $item->sampul}}</td>
                             <td>{{ $item->deskripsi}}</td>
                             <td>{{ $item->berat}}</td>
                             <td>{{ $item->stok}}</td>

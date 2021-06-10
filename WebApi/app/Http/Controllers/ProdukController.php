@@ -15,7 +15,7 @@ class ProdukController extends Controller
     public function index()
     {
         $dtProduk = Produk::all();
-        return view('backend.DataProduk',compact('dtProduk'));
+        return view('backend.produk.DataProduk',compact('dtProduk'));
     }
 
     /**
@@ -25,7 +25,7 @@ class ProdukController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.produk.tambahproduk');
     }
 
     /**
@@ -36,34 +36,15 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(),[
-            'name'=>['required'],
-            'username'=>['required'],
-            'no_hp'=>['required'],
-            'email'=>['required'],
-            'level'=>['required', 'in:admin,user'],
-            'password'=>['required']
+        Produk::create([
+            'namaproduk' => $request->namaproduk,
+            'sampul' => $request->sampul,
+            'deskripsi' => $request->deskripsi,
+            'berat'=> $request->berat,
+            'stok'=> $request->stok,
+            'harga'=> $request->harga,
         ]);
-
-        if ($validator->fails()) {
-            return response()->json($validator->errors(),
-            Response::HTTP_UNPROCESSABLE_ENTITY);
-
-        }
-
-        try {
-            $users = Users::create($request->all());
-            $response = [
-                'message'=> 'account created',
-                'data' => $users
-            ];
-
-            return response()->json($response, Response::HTTP_CREATED);
-        } catch (QueryException $e) {
-            return response()->json([
-                'massage'=>"Failed " . $e->errorInfo
-            ]);
-        }
+        return redirect('produk');
     }
 
     /**
@@ -74,7 +55,8 @@ class ProdukController extends Controller
      */
     public function show($id)
     {
-        //
+        $prod = Produk::findorfail($id);
+        return view('backend.produk.editproduk', compact('prod'));
     }
 
     /**
