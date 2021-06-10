@@ -36,7 +36,34 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(),[
+            'name'=>['required'],
+            'username'=>['required'],
+            'no_hp'=>['required'],
+            'email'=>['required'],
+            'level'=>['required', 'in:admin,user'],
+            'password'=>['required']
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors(),
+            Response::HTTP_UNPROCESSABLE_ENTITY);
+
+        }
+
+        try {
+            $users = Users::create($request->all());
+            $response = [
+                'message'=> 'account created',
+                'data' => $users
+            ];
+
+            return response()->json($response, Response::HTTP_CREATED);
+        } catch (QueryException $e) {
+            return response()->json([
+                'massage'=>"Failed " . $e->errorInfo
+            ]);
+        }
     }
 
     /**
