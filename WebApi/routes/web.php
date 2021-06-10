@@ -61,7 +61,7 @@ Route::get('/editpengguna/{id}', 'PenggunaController@edit')->name('editpengguna'
 Route::post('/updatepengguna/{id}', 'PenggunaController@update')->name('updatepengguna');
 Route::get('/hapuspengguna/{id}', 'PenggunaController@destroy')->name('hapuspengguna');
 
-//route dokumantasi
+//route dokumentasi
 Route::get('/dokumentasi', 'DokumentasiController@index')->name('dokumentasi');
 Route::get('/tambahdokumentasi', 'DokumentasiController@create')->name('tambahdokumentasi');
 Route::post('/simpandokumentasi', 'DokumentasiController@store')->name('simpandokumentasi');
