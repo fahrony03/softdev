@@ -34,7 +34,7 @@
                         <a class="nav-link js-scroll-trigger" href="/informasi">Informasi</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/dokumentasi">Dokumentasi</a>
+                        <a class="nav-link js-scroll-trigger" href="/dokumentasis">Dokumentasi</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="/produk">Produk</a>

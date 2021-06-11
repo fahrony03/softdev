@@ -65,7 +65,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
 Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     Route::get('/homepage', [FrontendController ::class, 'homepage']);
     Route::get('/informasi', [FrontendController ::class, 'informasi']);
-    Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
+    Route::get('/dokumentasis', 'DokumentasiController@artikeldokumentasi')->name('dokumentasis');
     Route::get('/produk', [FrontendController ::class, 'produk']);
     Route::get('/contact', [FrontendController ::class, 'contact']);
     Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);

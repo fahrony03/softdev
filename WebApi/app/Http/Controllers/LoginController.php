@@ -33,5 +33,6 @@ class LoginController extends Controller
             'password' =>bcrypt($request->password),
             'remember_token' =>Str::random(60),
         ]);
+        return view('backend.auth.login');
     }
 }

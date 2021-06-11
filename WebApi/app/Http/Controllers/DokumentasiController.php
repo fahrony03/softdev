@@ -17,6 +17,12 @@ class DokumentasiController extends Controller
         return view('backend.dokumentasi.dokumentasi',compact('dtDokumentasi'));
     }
 
+    public function artikeldokumentasi()
+    {
+        $dtDokumentasi = Dokumentasi::latest()->get();
+        return view('frontend.layouts.dokumentasi',compact('dtDokumentasi'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
