@@ -55,6 +55,8 @@ Route::post('/simpandokumentasi', 'DokumentasiController@store')->name('simpando
 
 //login
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
+Route::get('/registrasi', [LoginController ::class, 'registrasi']);
+Route::post('/simpanregistrasi', 'LoginController@simpanregistrasi')->name('simpanregistrasi');
 
 Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::get('/sadmin', 'BackendController@index');
