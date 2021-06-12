@@ -3,6 +3,7 @@
 @section('content')
 <br><br>
     <!--content--> 
+<div class="container">
     <section class="banner_main">
                <div class="container-fluid">
                   <div class="row d_flex">
@@ -21,6 +22,7 @@
                   </div>
                </div>
             </section>
+        </div>
          </div>
       </header>
       <br><br><br>
