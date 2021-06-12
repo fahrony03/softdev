@@ -1,24 +1,60 @@
+
 @extends('frontend.layouts.layout')
 @section('content')
 <br><br>
-    <!--content-->
-    <section id="hero" class="d-flex align-items-center bg">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>Aplikasi pertanian </h1>
-                    <h2>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian
-                        dan dapat dengan mudah memperoleh bahan pangan.</h2>
-                    <div><button type="button" class="btn btn-success">Get App</button></div>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img">
+    <!--content--> 
+    <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <h1><font color="green">UNDUH APLIKASI</font></h1>
+                           <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
+                        , membeli berbagai produk kami dimana saja dan kapan saja.</p>
+                        <div><button type="button" class="btn btn-success">Get App</button></div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 order-1 order-lg-2 hero-img">
                     <img src="{{asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
                 </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <br><br><br>
+        <div class="judul-card bg-light">
+            <h1 class="display-4">Keunggulan</h1>
+            <hr>
+            <div id="service" class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="images/service1.png" alt="#" /></i>
+                     <h3> Software</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="images/service2.png" alt="#" /></i>
+                     <h3>For Mobile</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="images/service3.png" alt="#" /></i>
+                     <h3>For Computer</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
+         </div>
+      </div>
+        <div class="container">
     <br><br><br>
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
@@ -37,6 +73,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
         <div class="container">
             <div class="judul-card">
