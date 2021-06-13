@@ -76,22 +76,7 @@
             </div>
         </div>
     </div>
-    </div> <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                            <a href="resources/views/backend/auth/login.blade.php" class="btn btn-outline-success">Baca</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+    
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
