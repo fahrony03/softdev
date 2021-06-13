@@ -16,7 +16,7 @@
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="{{asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/background.png')}}" class="img-fluid" >
                 </div>
                      </div>
                   </div>
@@ -34,22 +34,22 @@
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
-                     <i><img src="images/service1.png" alt="#" /></i>
-                     <h3> Software</h3>
+                     <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
+                     <h3>Belanja</h3>
                      <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
-                     <i><img src="images/service2.png" alt="#" /></i>
-                     <h3>For Mobile</h3>
+                     <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
+                     <h3>Pembayaran</h3>
                      <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
-                     <i><img src="images/service3.png" alt="#" /></i>
-                     <h3>For Computer</h3>
+                     <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
+                     <h3>Pengiriman</h3>
                      <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
                   </div>
                </div>
@@ -61,7 +61,22 @@
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
-        <div class="container">
+            <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
+                            <a href="resources/views/backend/auth/login.blade.php" class="btn btn-outline-success">Baca</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card h-100">
