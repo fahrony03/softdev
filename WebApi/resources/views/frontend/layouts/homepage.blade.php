@@ -56,33 +56,6 @@
             </div>
          </div>
       </div>
-      <br><br><br>   
-      <div class="best-features about-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-            <h1 class="display-4">About Me</h1>
-            <hr>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="{{asset('assets/img/sayur 2.jpg')}}" alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
-              <small class="btn btn-outline-success">Product</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <br><br><br>
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
@@ -101,8 +74,33 @@
               </div>
             </div>
           </div>
+    </div> 
+      <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+            <h1 class="display-4">About Me</h1>
+            <hr>
+            </div>
+            <br>
+
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="{{asset('assets/img/sayur 2.jpg')}}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div>
+    <br><br>
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
