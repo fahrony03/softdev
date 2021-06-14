@@ -61,22 +61,21 @@
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
-            <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                            <a href="resources/views/backend/auth/login.blade.php" class="btn btn-outline-success">Baca</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{{asset('assets/img/background.jpg')}}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Petani Sukses</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+              <div class="card-footer">
+                <small class="btn btn-outline-success">Baca</small>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
-    
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
