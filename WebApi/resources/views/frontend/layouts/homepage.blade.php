@@ -56,6 +56,35 @@
             </div>
          </div>
       </div>
+      <div>
+        <div class="container">
+            <div class="judul-card">
+                <h1 class="display-4">Dokumentasi</h1>
+                <hr>
+            </div>
+            <div class="col-md-6">
+            <div class="left-content">
+              <h4>Looking for the best products?</h4>
+              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <ul class="featured-list">
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Consectetur an adipisicing elit</a></li>
+                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                <li><a href="#">Corporis, omnis doloremque</a></li>
+                <li><a href="#">Non cum id reprehenderit</a></li>
+              </ul>
+              <a href="about.html" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="assets/images/feature-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            </div>
         <div class="container">
     <br><br><br>
         <div class="judul-card bg-light" id="informasi">
@@ -63,7 +92,7 @@
             <hr>
             <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="{{asset('assets/img/background.jpg')}}" alt=""></a>
+              <a href="#"><img src="{{asset('assets/img/background.jpg')}}" class="img-thumbnail" alt="..."></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#">Petani Sukses</a>
@@ -76,6 +105,7 @@
             </div>
           </div>
     </div>
+    <div>
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
