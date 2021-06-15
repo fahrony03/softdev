@@ -100,6 +100,8 @@ class DokumentasiController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        $dok->delete();
+        return redirect('dokumentasi');
     }
 }
