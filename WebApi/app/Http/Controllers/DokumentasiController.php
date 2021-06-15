@@ -77,7 +77,8 @@ class DokumentasiController extends Controller
      */
     public function edit($id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        return view('backend.dokumentasi.editdokumentasi', compact('dok'));
     }
 
     /**
@@ -89,7 +90,9 @@ class DokumentasiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        $dok->update($request->all());
+        return redirect('dokumentasi');
     }
 
     /**

@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dokumentasi extends Model
 {
-    use HasFactory;
+    protected $table = "dokumentasi";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'judul', 'caption', 'konten', 'gambar'
+    ];
 }
