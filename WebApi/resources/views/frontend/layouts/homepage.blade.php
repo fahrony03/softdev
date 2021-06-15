@@ -56,27 +56,51 @@
             </div>
          </div>
       </div>
-        <div class="container">
     <br><br><br>
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
-            <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                            <a href="resources/views/backend/auth/login.blade.php" class="btn btn-outline-success">Baca</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img src="{{asset('assets/img/background.jpg')}}" class="img-thumbnail" alt="..."></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Petani Sukses</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+              <div class="card-footer">
+                <small class="btn btn-outline-success">Baca</small>
+              </div>
             </div>
+          </div>
+    </div> 
+      <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+            <h1 class="display-4">About Me</h1>
+            <hr>
+            </div>
+            <br>
+
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="{{asset('assets/img/sayur 2.jpg')}}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+    <div>
+    <br><br>
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
