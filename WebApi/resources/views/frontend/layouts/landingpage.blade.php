@@ -49,13 +49,12 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-      <br><br>
-      <h1>SI PEKA</h1>
-      <h2>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum.</h2>
+      <h3>SI PEKA</h3>
+   <p class="satu">Website pertama yang menjual paket sayur lengkap di Kabupaten Bondowoso dan bekerja sama langsung dengan salah satu SMK Pertanian diBondowoso. Yaitu SMK Negeri 1 Tegalampel.</p>
       <a href="/get app" class="btn btn-success">Get App</a>
     </div>
     <div class="col-lg-6 order-1 order-lg-2 hero-img">
-      <br><br>
+      <br>
       <img src="assets/img/hero-img.png" class="img-fluid" alt="">
     </div>
   </div>
