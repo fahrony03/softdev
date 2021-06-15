@@ -50,7 +50,7 @@
                           <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                               {{-- <a href="{{ url('editpengguna', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a> --}}
-                              {{-- <a href="{{ url('hapuspengguna', $item->id) }}" type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a> --}}
+                              <a href="{{ url('hapusdokumentasi', $item->id) }}" type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
                               </div>
                           </td>
                         </tr>
