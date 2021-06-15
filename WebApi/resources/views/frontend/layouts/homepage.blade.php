@@ -1,4 +1,3 @@
-
 @extends('frontend.layouts.layout')
 @section('content')
 <br><br>
