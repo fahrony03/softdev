@@ -21,7 +21,7 @@
                     <hr>
 
                     <!--ubah dari bagian ini sesuai isi konten-->
-
+                    @foreach ($dtDokumentasi as $item)
                     <h1><b>Artikel</b></h1>
                     <br>
                     <p>
@@ -32,6 +32,8 @@
                             Yang Baik Dan Benar. Sangat Mudah!</cite>
                     </footer>
                 </blockquote>
+        @endforeach
+
             </div>
         </div>
     </div>

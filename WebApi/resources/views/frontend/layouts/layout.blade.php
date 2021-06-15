@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll-trigger" href="/homepage">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="/informasi">Informasi</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/dokumentasi">Dokumentasi</a>
+                        <a class="nav-link js-scroll-trigger" href="/dokumentasis">Dokumentasi</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="/produk">Produk</a>
@@ -44,6 +44,9 @@
                     </li>
                 </ul>
                 </ul>
+                <span class="navbar-text">
+                    <a href="/" class="btn btn-warning">Log Out</a>
+                </span>
             </div>
         </div>
     </nav>

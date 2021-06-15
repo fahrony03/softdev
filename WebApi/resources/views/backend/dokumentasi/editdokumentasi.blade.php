@@ -25,7 +25,7 @@
       </div>
   
         <div class="card-body">
-            <form action="{{ route('simpandokumentasi')}}" method="post" enctype="multipart/form-data">
+            <form action="{{ url('updatedokumentasi',$dok->id)}}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <input name="judul" type="text" id="judul" class="form-control" placeholder="Judul">

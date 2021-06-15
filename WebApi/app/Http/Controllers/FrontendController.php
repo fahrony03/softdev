@@ -18,7 +18,7 @@ class FrontendController extends Controller
         return view('frontend.layouts.informasi');
     }
 
-    public function dokumentasi(){
+    public function dokumentasis(){
         return view('frontend.layouts.dokumentasi');
     }
 

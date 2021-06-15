@@ -19,8 +19,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/users', [UsersController::class, 'index']);
-Route::post('/users', [UsersController::class, 'store']);
-Route::put('/users/{id}', [UsersController::class, 'update']);
-Route::get('/users/{id}', [UsersController::class, 'show']);
-Route::delete('/users/{id}', [UsersController::class, 'destroy']);
+Route::group(['namespace' => 'Backend'], function(){
+    Route::get('api_user', 'ApiUserController@getall');
+    Route::get('api_user/{id}', 'ApiUserController@getus');
+    Route::post('api_user', 'ApiUserController@createus');
+    Route::put('api_user', 'ApiUserController@updateus');
+    Route::delete('api_user', 'ApiUserController@deleteus');
+
+});

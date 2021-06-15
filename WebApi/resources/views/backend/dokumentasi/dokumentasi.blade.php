@@ -7,12 +7,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Data User</h1>
+          <h1 class="m-0">Dokumentasi</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Data User</li>
+            <li class="breadcrumb-item"><a href="/sadmin">Home</a></li>
+            <li class="breadcrumb-item active">Artikel Dokumentasi</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -49,8 +49,8 @@
                           <td><a href="{{ asset('img/'. $item->gambar)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
                           <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                              {{-- <a href="{{ url('editpengguna', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a> --}}
-                              {{-- <a href="{{ url('hapuspengguna', $item->id) }}" type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a> --}}
+                              <a href="{{ url('editdokumentasi', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
+                              <a href="{{ url('hapusdokumentasi', $item->id) }}" type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
                               </div>
                           </td>
                         </tr>

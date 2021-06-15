@@ -17,6 +17,12 @@ class DokumentasiController extends Controller
         return view('backend.dokumentasi.dokumentasi',compact('dtDokumentasi'));
     }
 
+    public function artikeldokumentasi()
+    {
+        $dtDokumentasi = Dokumentasi::latest()->get();
+        return view('frontend.layouts.dokumentasi',compact('dtDokumentasi'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -71,7 +77,8 @@ class DokumentasiController extends Controller
      */
     public function edit($id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        return view('backend.dokumentasi.editdokumentasi', compact('dok'));
     }
 
     /**
@@ -83,7 +90,9 @@ class DokumentasiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        $dok->update($request->all());
+        return redirect('dokumentasi');
     }
 
     /**
@@ -94,6 +103,8 @@ class DokumentasiController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $dok = Dokumentasi::findorfail($id);
+        $dok->delete();
+        return redirect('dokumentasi');
     }
 }

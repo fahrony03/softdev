@@ -30,9 +30,6 @@ Route::get('/sadmin', [BackendController ::class, 'home']);
 Route::get('/user', [BackendController ::class, 'user']);
 // Route::get('user', 'UsersController@index')->name('user');
 
-//akses admin
-
-
 //akses login
 Route::get('/login', function () {
     return view('backend/auth/login');
@@ -40,31 +37,43 @@ Route::get('/login', function () {
 
 Route::get('/data-pegawai', 'PegawaiController@index')->name('data-pegawai');
 
-//route user
-Route::get('/pengguna', 'PenggunaController@index')->name('pengguna');
-Route::get('/tambahpengguna', 'PenggunaController@create')->name('tambahpengguna');
-Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
-Route::get('/editpengguna/{id}', 'PenggunaController@edit')->name('editpengguna');
-Route::post('/updatepengguna/{id}', 'PenggunaController@update')->name('updatepengguna');
-Route::get('/hapuspengguna/{id}', 'PenggunaController@destroy')->name('hapuspengguna');
-
-//route dokumentasi
-Route::get('/dokumentasi', 'DokumentasiController@index')->name('dokumentasi');
-Route::get('/tambahdokumentasi', 'DokumentasiController@create')->name('tambahdokumentasi');
-Route::post('/simpandokumentasi', 'DokumentasiController@store')->name('simpandokumentasi');
-
 //login
 Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
+Route::get('/registrasi', [LoginController ::class, 'registrasi']);
+Route::post('/simpanregistrasi', 'LoginController@simpanregistrasi')->name('simpanregistrasi');
 
+//auth
 Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
+    //main
     Route::get('/sadmin', 'BackendController@index');
+
+    //route user
+    Route::get('/pengguna', 'PenggunaController@index')->name('pengguna');
+    Route::get('/tambahpengguna', 'PenggunaController@create')->name('tambahpengguna');
+    Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
+    Route::get('/editpengguna/{id}', 'PenggunaController@edit')->name('editpengguna');
+    Route::post('/updatepengguna/{id}', 'PenggunaController@update')->name('updatepengguna');
+    Route::get('/hapuspengguna/{id}', 'PenggunaController@destroy')->name('hapuspengguna');
+
+    //route dokumentasi
+    Route::get('/dokumentasi', 'DokumentasiController@index')->name('dokumentasi');
+    Route::get('/tambahdokumentasi', 'DokumentasiController@create')->name('tambahdokumentasi');
+    Route::post('/simpandokumentasi', 'DokumentasiController@store')->name('simpandokumentasi');
+    Route::get('/hapusdokumentasi/{id}', 'DokumentasiController@destroy')->name('hapusdokumentasi');
+    Route::get('/editdokumentasi/{id}', 'DokumentasiController@edit')->name('editdokumentasi');
+    Route::post('/updatedokumentasi/{id}', 'DokumentasiController@update')->name('updatedokumentasi');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
+    //main
     Route::get('/homepage', [FrontendController ::class, 'homepage']);
     Route::get('/informasi', [FrontendController ::class, 'informasi']);
-    Route::get('/dokumentasi', [FrontendController ::class, 'dokumentasi']);
     Route::get('/produk', [FrontendController ::class, 'produk']);
     Route::get('/contact', [FrontendController ::class, 'contact']);
     Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
+
+    //frontend crud
+    Route::get('/dokumentasis', 'DokumentasiController@artikeldokumentasi')->name('dokumentasis');
+
+    
 });

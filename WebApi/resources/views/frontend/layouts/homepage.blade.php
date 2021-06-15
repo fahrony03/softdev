@@ -1,43 +1,105 @@
 @extends('frontend.layouts.layout')
 @section('content')
 <br><br>
-    <!--content-->
-    <section id="hero" class="d-flex align-items-center bg">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>Aplikasi pertanian </h1>
-                    <h2>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian
-                        dan dapat dengan mudah memperoleh bahan pangan.</h2>
-                    <div><button type="button" class="btn btn-success">Get App</button></div>
+    <!--content--> 
+<div class="container">
+    <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <h1><font color="green">UNDUH APLIKASI</font></h1>
+                           <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
+                        , membeli berbagai produk kami dimana saja dan kapan saja.</p>
+                        <div><button type="button" class="btn btn-success">Get App</button></div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <img src="{{asset('assets/img/background.png')}}" class="img-fluid" >
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="{{asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
-                </div>
-            </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
         </div>
-    </section>
-
+         </div>
+      </header>
+      <br><br><br>
+        <div class="judul-card bg-light">
+            <h1 class="display-4">Keunggulan</h1>
+            <hr>
+            <div id="service" class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
+                     <h3>Belanja</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
+                     <h3>Pembayaran</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
+                     <h3>Pengiriman</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
     <br><br><br>
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                            <a href="resources/views/backend/auth/login.blade.php" class="btn btn-outline-success">Baca</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img src="{{asset('assets/img/background.jpg')}}" class="img-thumbnail" alt="..."></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Petani Sukses</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+              <div class="card-footer">
+                <small class="btn btn-outline-success">Baca</small>
+              </div>
             </div>
+          </div>
+    </div> 
+      <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+            <h1 class="display-4">About Me</h1>
+            <hr>
+            </div>
+            <br>
+
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="{{asset('assets/img/sayur 2.jpg')}}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div>
+    <br><br>
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
