@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70f7e19a-ecbd-45fe-8951-7dc92c2d20c1" name="Default Changelist" comment="" />
+    <list default="true" id="70f7e19a-ecbd-45fe-8951-7dc92c2d20c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/SIPEKA/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SIPEKA/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIPEKA/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/SIPEKA/app/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +40,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="139" key="FileChooserDialogImpl" timestamp="1623749315352">
+    <state x="460" y="139" key="FileChooserDialogImpl" timestamp="1623811327097">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state x="460" y="139" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1623749315352" />
+    <state x="460" y="139" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1623811327097" />
     <state x="336" y="172" key="run.anything.popup" timestamp="1623749270112">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
