@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="masukkan username"
-                android:id="@/username"
+                android:id="@id+/etusername"
                 android:input"text"
                 android:drawlableLeft="@drawble/ic_baseline_person_24.xml"/>
         </TextInputLayot>
@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="masukkan password"
-                android:id="@/password"
+                android:id="@id+/etpassword"
                 android:input"textPassword"
             android:drawlableLeft="@drawble/ic_baseline_vpn_key_24"/>
         </TextInputLayout>
