@@ -26,28 +26,28 @@
             android:textColor="@color/black"
             android:textSize="40dp"
             android:textStyle="bold"
-        <android.support.design.widget.TextInputLayout
-            android.layout_width="match_parent"
-            android.layout_height="wrap_content">
+        <TextInputLayot
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="masukkan username"
-                android:id="@+/etusername"
+                android:id="@/username"
                 android:input"text"
                 android:drawlableLeft="@drawble/ic_baseline_person_24.xml"/>
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android.layout_width="match_parent"
-            android.layout_height="wrap_content">
+        </TextInputLayot>
+        <TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="masukkan password"
-                android:id="@+/etpassword"
+                android:id="@/password"
                 android:input"textPassword"
             android:drawlableLeft="@drawble/ic_baseline_vpn_key_24"/>
-        </android.support.design.widget.TextInputLayout>
+        </TextInputLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
