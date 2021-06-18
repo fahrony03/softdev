@@ -25,6 +25,7 @@
          </div>
       </header>
       <br><br><br>
+
         <div class="judul-card bg-light">
             <h1 class="display-4">Keunggulan</h1>
             <hr>
@@ -56,6 +57,7 @@
          </div>
       </div>
     <br><br><br>
+    
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
@@ -73,6 +75,7 @@
               </div>
             </div>
           </div>
+
     </div> 
       <div class="best-features about-features">
       <div class="container">
@@ -103,6 +106,7 @@
     </div>
     <div>
     <br><br>
+
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
