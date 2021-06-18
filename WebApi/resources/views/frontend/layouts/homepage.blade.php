@@ -92,13 +92,10 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate 
-              nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores 
-              delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-              <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, 
-              modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, 
-              in eum facere corrupti necessitatibus perspiciatis quis.</p>
+              <p> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
+              <br>Yang memiliki keunggulan yaitu memiliki harga yang lebih miring dari pada yang lainnya,
+              sayuran kami dijamin fresh karena bekerja sama langsung dengan SMK Pertanian Pembangunan 
+              Negeri 1 Tegalampel Bondowoso, Pelanggan hanya perlu santai dirumah pesanan akan kami antar</p>
             </div>
           </div>
         </div>
