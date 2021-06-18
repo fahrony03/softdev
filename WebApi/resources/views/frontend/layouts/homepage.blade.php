@@ -92,7 +92,13 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate 
+              nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores 
+              delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+              <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, 
+              modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, 
+              in eum facere corrupti necessitatibus perspiciatis quis.</p>
             </div>
           </div>
         </div>
