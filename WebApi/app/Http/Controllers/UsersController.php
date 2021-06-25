@@ -6,7 +6,6 @@ use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Response;
-use App\Models\Users;
 
 class UsersController extends Controller
 {

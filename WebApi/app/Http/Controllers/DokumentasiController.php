@@ -90,8 +90,18 @@ class DokumentasiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $dok = Dokumentasi::findorfail($id);
-        $dok->update($request->all());
+        $ubah = Dokumentasi::findorfail($id);
+        $awal = $ubah->gambar;
+
+        $dt =[
+            'judul' => $request['judul'],
+            'caption' => $request['caption'],
+            'konten' => $request['konten'],
+            'gambar' => $awal,
+        ];
+
+        $request->gambar->move(public_path().'/img', $awal);
+        $ubah->update($dt);
         return redirect('dokumentasi');
     }
 
@@ -104,7 +114,15 @@ class DokumentasiController extends Controller
     public function destroy($id)
     {
         $dok = Dokumentasi::findorfail($id);
+        $file = public_path('/img/').$dok->gambar;
+
+        if (file_exists($file)){
+            @unlink($file);
+        }
+
         $dok->delete();
-        return redirect('dokumentasi');
+        return back();
+        // $dok->delete();
+        // return redirect('dokumentasi');
     }
 }
