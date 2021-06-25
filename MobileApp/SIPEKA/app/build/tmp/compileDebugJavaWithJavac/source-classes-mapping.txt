@@ -1,0 +1,20 @@
+com/example/sipeka/ui/home/HomeViewModel.java
+ com.example.sipeka.ui.home.HomeViewModel
+com/example/sipeka/ui/gallery/GalleryFragment.java
+ com.example.sipeka.ui.gallery.GalleryFragment
+ com.example.sipeka.ui.gallery.GalleryFragment$1
+com/example/sipeka/MainActivity.java
+ com.example.sipeka.MainActivity
+ com.example.sipeka.MainActivity$1
+com/example/sipeka/ui/gallery/GalleryViewModel.java
+ com.example.sipeka.ui.gallery.GalleryViewModel
+com/example/sipeka/ui/slideshow/SlideshowFragment.java
+ com.example.sipeka.ui.slideshow.SlideshowFragment
+ com.example.sipeka.ui.slideshow.SlideshowFragment$1
+com/example/sipeka/BuildConfig.java
+ com.example.sipeka.BuildConfig
+com/example/sipeka/ui/slideshow/SlideshowViewModel.java
+ com.example.sipeka.ui.slideshow.SlideshowViewModel
+com/example/sipeka/ui/home/HomeFragment.java
+ com.example.sipeka.ui.home.HomeFragment
+ com.example.sipeka.ui.home.HomeFragment$1

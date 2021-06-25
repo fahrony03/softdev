@@ -25,6 +25,7 @@
          </div>
       </header>
       <br><br><br>
+
         <div class="judul-card bg-light">
             <h1 class="display-4">Keunggulan</h1>
             <hr>
@@ -56,6 +57,7 @@
          </div>
       </div>
     <br><br><br>
+    
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>
             <hr>
@@ -73,6 +75,7 @@
               </div>
             </div>
           </div>
+
     </div> 
       <div class="best-features about-features">
       <div class="container">
@@ -92,7 +95,10 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+              <p> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
+              <br>Yang memiliki keunggulan yaitu memiliki harga yang lebih miring dari pada yang lainnya,
+              sayuran kami dijamin fresh karena bekerja sama langsung dengan SMK Pertanian Pembangunan 
+              Negeri 1 Tegalampel Bondowoso, Pelanggan hanya perlu santai dirumah pesanan akan kami antar</p>
             </div>
           </div>
         </div>
@@ -100,6 +106,7 @@
     </div>
     <div>
     <br><br>
+
         <div class="container">
             <div class="judul-card">
                 <h1 class="display-4">Dokumentasi</h1>
