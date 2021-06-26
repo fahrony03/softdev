@@ -38,7 +38,7 @@
                     {{-- <input name="konten" type="text" id="konten" class="form-control" placeholder="Content"> --}}
                 </div>
                 <div class="form-group">
-                    <input name="gambar" type="file" id="gambar" class="form-control" placeholder="Image">
+                    <input name="gambar" type="file" id="gambar">
                 </div>
                 <div class="form-group">
                    <button type="submit" class="btn btn-success">Tambah Data</button>

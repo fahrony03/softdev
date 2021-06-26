@@ -38,14 +38,12 @@
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>{{ $item->judul }}</b></h5>
+                        <p>{{ $item->caption}}</p>
                         <a href="/detail_informasi" class="btn btn-outline-success">Baca</a>
-                        <a href="{{ url('editdokumentasi', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-        @endforeach
-
-        </div>
-        </div>
+        </div>    
+    </div>
+    @endforeach
     @endsection
