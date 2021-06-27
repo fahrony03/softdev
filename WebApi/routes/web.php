@@ -62,6 +62,14 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::get('/hapusdokumentasi/{id}', 'DokumentasiController@destroy')->name('hapusdokumentasi');
     Route::get('/editdokumentasi/{id}', 'DokumentasiController@edit')->name('editdokumentasi');
     Route::post('/updatedokumentasi/{id}', 'DokumentasiController@update')->name('updatedokumentasi');
+
+    //route informasi
+    Route::get('/informasis', 'InformasiController@index')->name('informasis');
+    Route::get('/tambahinformasi', 'InformasiController@create')->name('tambahinformasi');
+    Route::post('/simpaninformasi', 'InformasiController@store')->name('simpaninformasi');
+    Route::get('/hapusinformasi/{id}', 'InformasiController@destroy')->name('hapusinformasi');
+    Route::get('/editinformasi/{id}', 'InformasiController@edit')->name('editinformasi');
+    Route::post('/updateinformasi/{id}', 'InformasiController@update')->name('updateinformasi');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){

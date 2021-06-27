@@ -235,6 +235,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <p>Dokumentasi</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="/informasis" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Informasi</p>
+            </a>
+          </li>
         </ul>
       </li>
           <li class="nav-item">
