@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:src="@drawable/Logosipeka"
+        android:src="@drawable/logosipeka"
         />
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,27 +35,23 @@
                 android:hint="masukkan username"
                 android:id="@id+/etusername"
                 android:input"text"
-                android:drawlableLeft="@drawble/ic_baseline_person_24.xml"/>
+            android:drawlableLeft="@drawble/ic_baseline_person_24.xml"/>
         </TextInputLayot>
-        <TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="masukkan password"
-                android:id="@id+/etpassword"
-                android:input"textPassword"
-            android:drawlableLeft="@drawble/ic_baseline_vpn_key_24"/>
-        </TextInputLayout>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:id="@+id/btnlogin"
-            android:text="LOGIN"
-            android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukkan password"
+        android:id="@id+/etpassword"
+        android:input"textPassword"
+        android:drawlableLeft="@drawble/ic_baseline_vpn_key_24"/>
 
-    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/btnlogin"
+        android:text="LOGIN"
+        android:textSize="16dp"
 
 </LinearLayout>
+
+    </LinearLayout>
