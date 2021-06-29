@@ -34,7 +34,7 @@
                         <a class="nav-link js-scroll-trigger" href="#keunggulan">Keunggulan</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="#informasi">Infromasi</a>
+                        <a class="nav-link js-scroll-trigger" href="#informasi">Informasi</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
