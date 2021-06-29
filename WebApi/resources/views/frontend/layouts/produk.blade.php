@@ -1,27 +1,27 @@
 @extends('frontend.layouts.layout')
 @section('content')
     
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('assets/img/cover.jpeg')}}" alt="Third slide">
-            </div>
+<div class="container">
+    <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <h1 id="home"><font color="green">UNDUH APLIKASI</font></h1>
+                           <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
+                        , membeli berbagai produk kami dimana saja dan kapan saja.</p>
+                        <div><button type="button" class="btn btn-success">Get App</button></div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <img src="{{asset('assets/img/sayuran 4.png')}}" class="img-fluid" >
+                </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+         </div>
 
     <br>
     <div class="judul-card">
