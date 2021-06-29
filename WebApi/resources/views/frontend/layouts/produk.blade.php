@@ -14,7 +14,7 @@
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="{{asset('assets/img/sayuran 4.png')}}" class="img-fluid" >
+                    <img src="{{asset('assets/img/sayuran 2.png')}}" class="img-fluid" >
                 </div>
                      </div>
                   </div>

@@ -8,7 +8,7 @@
                      <div class="col-md-5">
                         <div class="text-bg">
                            <h1 id="home"><font color="green">DOKUMENTASI</font></h1>
-                           <p>Selamat datang di Halaman Dokumentasi. Dimana nantinya pada halaman ini pembeli bisa melihat 
+                           <p>Selamat Datang di Halaman Dokumentasi. Dimana nantinya pada halaman ini pembeli bisa melihat 
                            kegiatan proses panen hingga proses penjualan ke pelanggan.</p>>
                         </div>
                      </div>
