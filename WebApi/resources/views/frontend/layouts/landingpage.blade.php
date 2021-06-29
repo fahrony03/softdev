@@ -60,20 +60,20 @@
                      <div class="col-md-5">
                         <div class="text-bg">
                            <h1 id="home"><font color="green">UNDUH APLIKASI</font></h1>
-                           <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
-                        , membeli berbagai produk kami dimana saja dan kapan saja.</p>
+                           <h5><font color="green">dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
+                        , membeli berbagai produk kami dimana saja dan kapan saja lor.</font></h5>
                         <div><button type="button" class="btn btn-success">Get App</button></div>
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="{{asset('assets/img/background.png')}}" class="img-fluid" >
+                    <img src="{{asset('assets/img/background.png')}}" class="img-fluid">
                 </div>
                      </div>
                   </div>
                </div>
             </section>
         </div>
-         </div>
+        </div>
       </header>
       <br><br><br>
         <div class="judul-card bg-light">
@@ -134,7 +134,6 @@
             <hr>
             </div>
             <br>
->>>>>>> Stashed changes
 
           </div>
           <div class="col-md-6">
