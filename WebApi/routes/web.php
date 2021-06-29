@@ -64,12 +64,20 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::post('/updatedokumentasi/{id}', 'DokumentasiController@update')->name('updatedokumentasi');
 
     //route informasi
-    Route::get('/informasis', 'InformasiController@index')->name('informasis');
+    Route::get('/informasis', 'InformasiController@index')->name('informasi');
     Route::get('/tambahinformasi', 'InformasiController@create')->name('tambahinformasi');
     Route::post('/simpaninformasi', 'InformasiController@store')->name('simpaninformasi');
     Route::get('/hapusinformasi/{id}', 'InformasiController@destroy')->name('hapusinformasi');
     Route::get('/editinformasi/{id}', 'InformasiController@edit')->name('editinformasi');
     Route::post('/updateinformasi/{id}', 'InformasiController@update')->name('updateinformasi');
+
+    // routeProduk
+    Route::get('/dataproduk', 'ProdukController@index')->name('dataproduk');
+    Route::get('/tambahproduk', 'ProdukController@create')->name('tambahproduk');
+    Route::post('/simpanproduk', 'ProdukController@store')->name('simpanproduk');
+    Route::get('/hapusproduk/{id}', 'ProdukController@destroy')->name('hapusproduk');
+    Route::get('/editproduk/{id}', 'ProdukController@edit')->name('editiproduk');
+    Route::post('/updateproduk/{id}', 'ProdukController@update')->name('updateproduk');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
@@ -83,5 +91,5 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     //frontend crud
     Route::get('/dokumentasis', 'DokumentasiController@artikeldokumentasi')->name('dokumentasis');
 
-    
+
 });

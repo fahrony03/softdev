@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Informasi;
 use Illuminate\Http\Request;
-
+use App\Models\Informasi;
 class InformasiController extends Controller
 {
     /**

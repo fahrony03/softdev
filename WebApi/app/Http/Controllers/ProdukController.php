@@ -36,15 +36,22 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        Produk::create([
-            'namaproduk' => $request->namaproduk,
-            'sampul' => $request->sampul,
-            'deskripsi' => $request->deskripsi,
-            'berat'=> $request->berat,
-            'stok'=> $request->stok,
-            'harga'=> $request->harga,
-        ]);
-        return redirect('produk');
+            $nm = $request->gambar;
+            $namaFile = $nm->getClientOriginalName();
+
+                $dtUpload = new Produk();
+                $dtUpload->namaproduk = $request->namaproduk;
+                $dtUpload->deskripsi = $request->deskripsi;
+                $dtUpload->berat = $request->berat;
+                $dtUpload->stok = $request->stok;
+                $dtUpload->harga = $request->harga;
+                $dtUpload->sampul = $namaFile;
+
+                $nm->move(public_path().'/img',$namaFile);
+                $dtUpload->save();
+
+                return redirect('dataproduk')->with('success','Data Pengalaman kerja baru telah berhasil disimpan');
+
     }
 
     /**
@@ -55,8 +62,7 @@ class ProdukController extends Controller
      */
     public function show($id)
     {
-        $prod = Produk::findorfail($id);
-        return view('backend.produk.editproduk', compact('prod'));
+
     }
 
     /**
@@ -67,7 +73,9 @@ class ProdukController extends Controller
      */
     public function edit($id)
     {
-        //
+        $prod = Produk::findorfail($id);
+        return view('backend.produk.editproduk', compact('prod'));
+
     }
 
     /**
@@ -79,7 +87,20 @@ class ProdukController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $nm = $request->gambar;
+        $namaFile = $nm->getClientOriginalName();
+
+        $updateProduk = Produk::findOrFail($id);
+        $updateProduk->namaproduk = $request->namaproduk;
+        $updateProduk->deskripsi = $request->deskripsi;
+        $updateProduk->berat = $request->berat;
+        $updateProduk->stok = $request->stok;
+        $updateProduk->harga = $request->harga;
+        $updateProduk->sampul = $namaFile;
+        $nm->move(public_path().'/img',$namaFile);
+        $updateProduk->save();
+
+        return redirect()->route('dataproduk')->with('success', 'Pengalaman Kerja Berhasil Diperbaharui');
     }
 
     /**
@@ -90,6 +111,14 @@ class ProdukController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $prod = Produk::findorfail($id);
+        $file = public_path('/img/').$prod->gambar;
+
+        if (file_exists($file)){
+            @unlink($file);
+        }
+
+        $prod->delete();
+        return back();
     }
 }

@@ -13,7 +13,7 @@ class CreateDokumentasisTable extends Migration
      */
     public function up()
     {
-        Schema::create('dokumentasis', function (Blueprint $table) {
+        Schema::create('dokumentasi', function (Blueprint $table) {
             $table->id();
             $table->string('judul', 100);
             $table->string('caption', 100);

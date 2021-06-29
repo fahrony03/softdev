@@ -39,6 +39,7 @@
                             <th>Berat</th>
                             <th>Stok</th>
                             <th>Harga</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -50,6 +51,12 @@
                             <td>{{ $item->berat}}</td>
                             <td>{{ $item->stok}}</td>
                             <td>{{ $item->harga}}</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                  <a href="{{ url('editproduk', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
+                                  <a href="{{ url('hapusproduk', $item->id) }}" type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
+                                  </div>
+                              </td>
                         </tr>
                         @endforeach
                     </tbody>
