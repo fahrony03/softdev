@@ -21,10 +21,11 @@
             </section>
         </div>
          </div>
-    <div class="judul-card">
+         <br><br><br><br><br><br>
+    <div class="judul-card bg-light">
         <h1 class="display-4">Dokumentasi</h1>
         <hr>
-    </div>
+    
 
     @foreach ($dtDokumentasi as $item)
     <div class="container">
@@ -42,5 +43,6 @@
             </div>
         </div>    
     </div>
+</div>
     @endforeach
     @endsection
