@@ -7,10 +7,9 @@
                   <div class="row d_flex">
                      <div class="col-md-5">
                         <div class="text-bg">
-                           <h1 id="home"><font color="green">UNDUH APLIKASI</font></h1>
-                           <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
-                        , membeli berbagai produk kami dimana saja dan kapan saja.</p>
-                        <div><button type="button" class="btn btn-success">Get App</button></div>
+                           <h1 id="home"><font color="green">DOKUMENTASI</font></h1>
+                           <p>Selamat datang di Halaman Dokumentasi. Dimana nantinya pada halaman ini pembeli bisa melihat 
+                           kegiatan proses panen hingga proses penjualan ke pelanggan.</p>>
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">
