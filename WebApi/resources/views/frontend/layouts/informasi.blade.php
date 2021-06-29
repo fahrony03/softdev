@@ -21,7 +21,7 @@
             </section>
         </div>
          </div>
-         <br><br><br><br><br><br>
+         <br>
     <div class="judul-card bg-light">
         <h1 class="display-4">Informasi Pertanian</h1>
         <hr>
