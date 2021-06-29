@@ -23,11 +23,11 @@
         </div>
          </div>
 
-    <br>
-    <div class="judul-card">
+    <br><br><br><br>
+    <div class="judul-card bg-light">
         <h1 class="display-4">Daftar Produk Pertanian</h1>
         <hr>
-    </div>
+    
 
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
@@ -47,4 +47,5 @@
             </div>
         </div>
     </div>
+</div>
     @stop
