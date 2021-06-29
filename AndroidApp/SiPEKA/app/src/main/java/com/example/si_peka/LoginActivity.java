@@ -13,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText username,password;
     Button login;
+    private Object MainActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        login = (Button) findViewById(R.id.btnlogin);
+        login = (Button) findViewById(R.id.btnLogin);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,8 +31,9 @@ public class LoginActivity extends AppCompatActivity {
                     if(!password.getText().toString().equals("")){
                         if (username.getText().toString().equals("Rhizki")){
                             if (password.getText().toString().equals("kepo")){
-                                Intent goMain = new Intent(LoginActivity.this.MainActivity.class);
-                                startActivity(goMain);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                                Intent goMain = new Intent(LoginActivity.this.MainActivity.class);
+                                startActivity(intent);
                             }else {
                                 Toast.makeText(getApplicationContext(), "password salah",Toast.LENGTH_LONG);
                             }
