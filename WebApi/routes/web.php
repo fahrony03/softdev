@@ -91,5 +91,4 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     //frontend crud
     Route::get('/dokumentasis', 'DokumentasiController@artikeldokumentasi')->name('dokumentasis');
 
-
 });
