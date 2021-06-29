@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d452ef-ff43-4eb4-8451-2c4e44cc97a7" name="Default Changelist" comment="" />
+    <list default="true" id="b1d452ef-ff43-4eb4-8451-2c4e44cc97a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/MobileApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/MobileApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SIPEKA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SIPEKA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/fahrony/.android/avd/Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -31,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AndroidApp/SiPEKA" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -48,6 +56,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="true" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -102,6 +111,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="true" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -150,6 +160,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -188,14 +199,16 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="478" y="130" key="AndroidProcessChooserDialog/0.0.1360.768@0.0.1360.768" timestamp="1623763592679" />
-    <state x="714" y="122" key="FileChooserDialogImpl" timestamp="1623819723055">
-      <screen x="0" y="0" width="1360" height="768" />
+    <state x="717" y="122" width="426" height="494" key="FileChooserDialogImpl" timestamp="1624945847565">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="714" y="122" key="FileChooserDialogImpl/0.0.1360.768@0.0.1360.768" timestamp="1623819723055" />
-    <state x="181" y="29" key="SettingsEditor" timestamp="1623827389354">
-      <screen x="0" y="0" width="1360" height="768" />
+    <state x="717" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1624945847565" />
+    <state x="182" y="0" width="1026" height="768" key="SettingsEditor" timestamp="1624945728804">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="181" y="29" key="SettingsEditor/0.0.1360.768@0.0.1360.768" timestamp="1623827389354" />
+    <state x="182" y="0" width="1026" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1624945728804" />
     <state x="336" y="172" width="672" height="677" key="run.anything.popup" timestamp="1623805555464">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
