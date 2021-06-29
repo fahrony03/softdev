@@ -24,7 +24,7 @@
         </div>
          </div>
       </header>
-      <br><br><br>
+      <br><br><br><br><br>
 
         <div class="judul-card bg-light">
             <h1 class="display-4">Keunggulan</h1>
@@ -56,7 +56,7 @@
             </div>
          </div>
       </div>
-    <br><br><br>
+    <br><br><br>br
     
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>

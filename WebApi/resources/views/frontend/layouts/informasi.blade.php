@@ -1,6 +1,6 @@
 @extends('frontend.layouts.layout')
 @section('content')
-
+<br>
 <div class="container">
     <section class="banner_main">
                <div class="container-fluid">
@@ -21,10 +21,11 @@
             </section>
         </div>
          </div>
-    <div class="judul-card">
+         <br><br><br><br><br><br>
+    <div class="judul-card bg-light">
         <h1 class="display-4">Informasi Pertanian</h1>
         <hr>
-    </div>
+    
 
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
@@ -42,4 +43,5 @@
 
         </div>
         </div>
+    </div>
     @endsection
