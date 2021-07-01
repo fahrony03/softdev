@@ -15,12 +15,33 @@ class ApiUserController extends Controller
         return response()->json($user, 201);
     }
 
-    // Public function createus(Request $request){
-    //     User::create($request->all());
+    Public function createus(Request $request)
+    {
+        User::create($request->all());
 
-    //     return response()->json([
-    //         'status' => 'ok',
-    //         'message' => 'User berhasil ditambahkan'
-    //     ],201);
-    // }
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'User berhasil ditambahkan'
+        ],201);
+    }
+
+    Public function updateus($id, Request $request)
+    {
+        User::find($id)->update($request->all());
+
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'User berhasil dirubah'
+        ],201);
+    }
+
+    Public function deleteeus($id)
+    {
+        User::destroy($id);
+
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'User berhasil dihapus'
+        ],201);
+    }
 }
