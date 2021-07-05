@@ -27,6 +27,11 @@ class PenggunaController extends Controller
         return view('backend.pengguna.tambahpengguna');
     }
 
+    public function tambah()
+    {
+        return view('frontend.layouts.contact');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
