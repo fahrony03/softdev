@@ -2,5 +2,4 @@
 <resources>
     <item name="username" type="id" />
     <item name="password" type="id" />
-    <item name="btnLogin" type="id" />
 </resources>
