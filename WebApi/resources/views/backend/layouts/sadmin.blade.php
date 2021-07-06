@@ -241,6 +241,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <p>Informasi</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="/transaksi" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Transaksi</p>
+            </a>
+          </li>
         </ul>
       </li>
           <li class="nav-item">

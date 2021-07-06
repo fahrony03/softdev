@@ -78,6 +78,14 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::get('/hapusproduk/{id}', 'ProdukController@destroy')->name('hapusproduk');
     Route::get('/editproduk/{id}', 'ProdukController@edit')->name('editiproduk');
     Route::post('/updateproduk/{id}', 'ProdukController@update')->name('updateproduk');
+
+    //routetransaksi
+    Route::get('/transaksi', 'TransaksiController@index')->name('datatransaksi');
+    Route::get('/tambahtransaksi', 'TransaksiController@create')->name('tambahtransaksi');
+    Route::post('/simpantransaksi', 'TransaksiController@store')->name('simpantransaksi');
+    Route::get('/hapustransaksi/{id}', 'TransaksiController@destroy')->name('hapustransaksi');
+    Route::get('/edittransaksi/{id}', 'TransaksiController@edit')->name('edititransaksi');
+    Route::post('/updatetransaksi/{id}', 'TransaksiController@update')->name('updatetransaksi');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){

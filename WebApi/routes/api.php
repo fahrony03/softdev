@@ -67,4 +67,11 @@ Route::group(['namespace' => 'Backend'], function(){
     Route::post('api_produk', 'ApiProdukController@createprod');
     Route::put('api_produk', 'ApiProdukController@updateprod');
     Route::delete('api_produk', 'ApiProdukController@deleteprod');
+
+    //transaksi
+    Route::get('api_transaksi', 'ApiTransaksiController@getall');
+    Route::get('api_transaksi/{id}', 'ApiTransaksiController@gettransk');
+    Route::post('api_transaksi', 'ApiTransaksiController@createtransk');
+    Route::put('api_transaksi', 'ApiTransaksiController@updatetransk');
+    Route::delete('api_transaksi', 'ApiTransaksiController@deletetransk');
 });
