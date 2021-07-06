@@ -37,7 +37,7 @@ class ProdukController extends Controller
     public function store(Request $request)
     {
             $nm = $request->gambar;
-            $namaFile = $nm->getClientOriginalName();
+            $namaFile = "http://127.0.0.1:8000/img/".$nm->getClientOriginalName();
 
                 $dtUpload = new Produk();
                 $dtUpload->namaproduk = $request->namaproduk;
