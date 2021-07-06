@@ -47,7 +47,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     //main
     Route::get('/sadmin', 'BackendController@index');
 
-    //route user
+    //route contact
     Route::get('/pengguna', 'PenggunaController@index')->name('pengguna');
     Route::get('/tambahpengguna', 'PenggunaController@create')->name('tambahpengguna');
     Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
@@ -85,7 +85,8 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     Route::get('/homepage', [FrontendController ::class, 'homepage']);
     Route::get('/informasi', [FrontendController ::class, 'informasi']);
     Route::get('/produk', [FrontendController ::class, 'produk']);
-    Route::get('/contact', [FrontendController ::class, 'contact']);
+    Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
+    Route::get('/contact', 'PenggunaController@tambah')->name('contact');
     Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
 
     //frontend crud

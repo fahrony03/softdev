@@ -1,40 +1,25 @@
 @extends('frontend.layouts.layout')
 @section('content')
+<b>CONTACT</b>
 <div class="container" style="padding-top:40px; padding-bottom:40px; padding-right:115px; padding-left:100px">
-    <div class="card">
-            <div class="card-body">
-                <h1 ><b>Contact admin</b></h1>
-                <div class="form">
-                <form action="aksi.php" method="POST">
-		<fieldset>
-		<div>
-			<label for="nama">Nama: </label>
-			<input type="text" class="form-control form-control-user"  name="nama" placeholder="Isi Nama Lengkap"
-            required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/>
-		</div>
-		<div>
-			<label for="alamat">Alamat: </label>
-			<input type="text" class="form-control form-control-user"  name="alamat" placeholder="Isi Alamat Lengkap"
-            required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/>
-		</div>
-        <div>
-			<label for="no">Nomor Telepon</label>
-			<input type="text" class="form-control form-control-user" name="no" placeholder="Nomor Telepon"
-            required oninvalid="this.setCustomValidity('data tidak boleh kosong')"/>
-		</div>
-        <div>
-        <label for="komentar">Komentar</label>
-        <textarea class="form-control" name="komentar" rows="3"></textarea>
+    <form action="{{ route('simpanpengguna')}}" method="post">
+        {{ csrf_field() }}
+        <div class="form-group">
+            <input name="name" type="text" id="name" class="form-control" placeholder="Nama">
         </div>
-        <br>
-        <div>
-        	<input type="submit" class="btn btn-success btn-lg btn-block" value="Daftar" name="daftar" />
-		</div>
-
-		</fieldset>
-
-	</form>
-    <br>
+        <div class="form-group">
+            <input name="username" type="text" id="username" class="form-control" placeholder="Alamat">
+        </div>
+        <div class="form-group">
+            <input name="email" type="number" id="email" class="form-control" placeholder="No hp">
+        </div>
+        <div class="form-group">
+            <input name="password" type="text" id="Password" class="form-control" placeholder="Komentar">
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-success">Kirim Data</button>
+        </div>
+    </form>
                 <div class="text-center">
                     <a class="small" href="https://chat.whatsapp.com/Kb1NTOu8YlNJRbVjuu7fvb">Contact Via Whatsapp</a>
                 </div>
