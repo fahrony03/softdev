@@ -47,15 +47,24 @@ Route::group(['namespace' => 'Backend'], function(){
     Route::put('api_contact', 'ApiPenggunaController@updatepeng');
     Route::delete('api_contact', 'ApiPenggunaController@deletepeng');
 
+    //dokumentasi
     Route::get('api_dokumentasi', 'ApiDokumentasiController@getall');
     Route::get('api_dokumentasi/{id}', 'ApiDokumentasiController@getdok');
     Route::post('api_dokumentasi', 'ApiDokumentasiController@createdok');
     Route::put('api_dokumentasi', 'ApiDokumentasiController@updatedok');
     Route::delete('api_dokumentasi', 'ApiDokumentasiController@deletedok');
 
+    //informasi
     Route::get('api_informasi', 'ApiInformasiController@getall');
     Route::get('api_informasi/{id}', 'ApiInformasiController@getinf');
     Route::post('api_informasi', 'ApiInformasiController@createinf');
     Route::put('api_informasi', 'ApiInformasiController@updateinf');
     Route::delete('api_informasi', 'ApiInformasiController@deleteinf');
+
+    //produk
+    Route::get('api_produk', 'ApiProdukController@getall');
+    Route::get('api_produk/{id}', 'ApiProdukController@getprod');
+    Route::post('api_produk', 'ApiProdukController@createprod');
+    Route::put('api_produk', 'ApiProdukController@updateprod');
+    Route::delete('api_produk', 'ApiProdukController@deleteprod');
 });

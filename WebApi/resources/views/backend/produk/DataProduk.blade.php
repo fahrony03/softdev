@@ -46,7 +46,7 @@
                     @foreach ($dtProduk as $item)
                         <tr>
                             <td>{{ $item->namaproduk}}</td>
-                            <td>{{ $item->sampul}}</td>
+                            <td><a href="{{ asset($item->sampul)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
                             <td>{{ $item->deskripsi}}</td>
                             <td>{{ $item->berat}}</td>
                             <td>{{ $item->stok}}</td>
