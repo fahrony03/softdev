@@ -46,5 +46,10 @@ Route::group(['namespace' => 'Backend'], function(){
     Route::post('api_contact', 'ApiPenggunaController@createpeng');
     Route::put('api_contact', 'ApiPenggunaController@updatepeng');
     Route::delete('api_contact', 'ApiPenggunaController@deletepeng');
-    
+
+    Route::get('api_dokumentasi', 'ApiDokumentasiController@getall');
+    Route::get('api_dokumentasi/{id}', 'ApiDokumentasiController@getdok');
+    Route::post('api_dokumentasi', 'ApiDokumentasiController@createdok');
+    Route::put('api_dokumentasi', 'ApiDokumentasiController@updatedok');
+    Route::delete('api_dokumentasi', 'ApiDokumentasiController@deletedok');
 });
