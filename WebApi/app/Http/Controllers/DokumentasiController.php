@@ -42,20 +42,19 @@ class DokumentasiController extends Controller
     public function store(Request $request)
     {
         $nm = $request->gambar;
-        $namaFile = $nm->getClientOriginalName();
+        $namaFile = "http://127.0.0.1:8000/img/".$nm->getClientOriginalName();
 
             $dtUpload = new dokumentasi;
             $dtUpload->judul = $request->judul;
             $dtUpload->caption = $request->caption;
             $dtUpload->konten = $request->konten;
-            $dtUpload->gambar = $namaFile;
+            $dtUpload->gambar =$namaFile;
 
             $nm->move(public_path().'/img',$namaFile);
             $dtUpload->save();
 
             return redirect('dokumentasi');
 
-            
     }
 
     /**

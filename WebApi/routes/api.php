@@ -29,7 +29,7 @@ Route::group(['prefix' => 'auth', 'middleware' => 'auth:sanctum'], function() {
     Route::get('api_user', 'ApiUserController@getall');
 
     // Route::get('api_user', [ApiUserController::class, 'getall']);
-    
+
 });
 
 Route::group(['namespace' => 'Backend'], function(){
@@ -46,5 +46,16 @@ Route::group(['namespace' => 'Backend'], function(){
     Route::post('api_contact', 'ApiPenggunaController@createpeng');
     Route::put('api_contact', 'ApiPenggunaController@updatepeng');
     Route::delete('api_contact', 'ApiPenggunaController@deletepeng');
-    
+
+    Route::get('api_dokumentasi', 'ApiDokumentasiController@getall');
+    Route::get('api_dokumentasi/{id}', 'ApiDokumentasiController@getdok');
+    Route::post('api_dokumentasi', 'ApiDokumentasiController@createdok');
+    Route::put('api_dokumentasi', 'ApiDokumentasiController@updatedok');
+    Route::delete('api_dokumentasi', 'ApiDokumentasiController@deletedok');
+
+    Route::get('api_informasi', 'ApiInformasiController@getall');
+    Route::get('api_informasi/{id}', 'ApiInformasiController@getinf');
+    Route::post('api_informasi', 'ApiInformasiController@createinf');
+    Route::put('api_informasi', 'ApiInformasiController@updateinf');
+    Route::delete('api_informasi', 'ApiInformasiController@deleteinf');
 });

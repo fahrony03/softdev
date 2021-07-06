@@ -41,7 +41,7 @@
                     <input name="gambar" type="file" id="gambar">
                 </div>
                 <div class="form-group">
-                  <img src="{{ asset('img/'. $dok->gambar)}}" height="10%" width="50%" alt="">
+                  <img src="{{ asset($dok->gambar)}}" height="10%" width="50%" alt="">
                 </div>
 
                 <div class="form-group">
