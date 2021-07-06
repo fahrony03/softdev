@@ -33,10 +33,18 @@ Route::group(['prefix' => 'auth', 'middleware' => 'auth:sanctum'], function() {
 });
 
 Route::group(['namespace' => 'Backend'], function(){
+    //user
     Route::get('api_user', 'ApiUserController@getall');
     Route::get('api_user/{id}', 'ApiUserController@getus');
     Route::post('api_user', 'ApiUserController@createus');
     Route::put('api_user', 'ApiUserController@updateus');
     Route::delete('api_user', 'ApiUserController@deleteus');
+
+    //contact
+    Route::get('api_contact', 'ApiPenggunaController@getall');
+    Route::get('api_contact/{id}', 'ApiPenggunaController@getpeng');
+    Route::post('api_contact', 'ApiPenggunaController@createpeng');
+    Route::put('api_contact', 'ApiPenggunaController@updatepeng');
+    Route::delete('api_contact', 'ApiPenggunaController@deletepeng');
     
 });
