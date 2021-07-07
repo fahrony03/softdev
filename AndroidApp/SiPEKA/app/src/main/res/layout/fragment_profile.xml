@@ -6,8 +6,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHome"
-        android:text="Ini Halaman Home"
+        android:id="@+id/txtProfile"
+        android:text="Ini Halaman Profile"
         android:textSize="30sp"
         android:textColor="#000"
         android:gravity="center"

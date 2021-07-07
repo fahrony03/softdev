@@ -6,8 +6,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHome"
-        android:text="Ini Halaman Home"
+        android:id="@+id/txtCart"
+        android:text="Ini Halaman cart"
         android:textSize="30sp"
         android:textColor="#000"
         android:gravity="center"
