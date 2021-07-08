@@ -56,7 +56,7 @@
             </div>
          </div>
       </div>
-    <br><br><br>br
+    <br><br><br>
     
         <div class="judul-card bg-light" id="informasi">
             <h1 class="display-4">Informasi</h1>

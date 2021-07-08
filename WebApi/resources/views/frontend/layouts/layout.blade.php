@@ -4,60 +4,57 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css.css')}}">
     <title>Si PEKA</title>
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--navbar-->
+    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class="">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/homepage">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/informasi">Informasi</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/dokumentasis">Dokumentasi</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/produk">Produk</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link" style="color:white;padding-top:10px;" href="#" data-toggle="dropdown">{{ auth()->user()->name }}<i class="fa fa-user fa-lg"></i></a>
-                            <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-cog fa-lg"></i> Settings</a>
-                                <li><a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                                <li><a class="dropdown-item" href="../auth/logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
-                            </ul>
-                    </li>
-                </ul>
-                </ul>
-                <span class="navbar-text">
-                    <a href="/" class="btn btn-warning">Log Out</a>
-                </span>
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="/homepage">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="/informasi">Informasi</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="/dokumentasis">Dokumentasi</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="/produk">Produk</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link" style="color:white;padding-top:10px;" href="#" data-toggle="dropdown">{{ auth()->user()->name }}<i class="fa fa-user fa-lg"></i></a>
+                        <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-cog fa-lg"></i> Settings</a>
+                            <li><a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="../auth/logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                        </ul>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a href="/" class="btn btn-warning">Log Out</a>
+            </span>
+          </div>
         </div>
-    </nav>
+    </div>
+      </nav>
     <br><br><br>
 <br><br>
     @yield('content')
@@ -77,29 +74,6 @@
                                 <p>Website pemasaran hasil pertanian SMKPP Negeri 1 Tegalampel.</p>
                             </div>
                             <hr class="clearfix w-100 d-md-none pb-3">
-                            <div class="col-md-3 mb-md-0 mb-3">
-                                <!-- Links -->
-                                <h5 class="text-uppercase">Info</h5>
-                                <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://www.alodokter.com/berbagai-manfaat-sayuran-hijau-untuk-kesehatan#:~:text=Mengonsumsi%20sayuran%20hijau%2C%20seperti%20bayam,dalam%20tubuh%2C%20termasuk%20radang%20sendi."
-                                        target="_blank">1. Menanam Tumbuhan Dirumah</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.alodokter.com/berbagai-manfaat-sayuran-hijau-untuk-kesehatan"
-                                        target="_blank">2. Khasiat Sayuran Hijau</a>
-                                    </li>
-                                    <li>
-                                    <a href="www.alodokter.com/manfaat-buah-untuk-kesehatan-yang-perlu-anda-ketahui"
-                                        target="_blank">3. Manfaat Mengonsumsi Buah</a>
-                                        
-                                    </li>
-                                    <li>
-                                    <a href="www.sehatq.com/artikel/menelisik-menu-diet-gm"
-                                        target="_blank">4. Diet yang Sehat</a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="col-md-3 mb-md-0 mb-3">
                                 <h5 class="text-uppercase">Contact</h5>
                                 <ul class="list-unstyled">
