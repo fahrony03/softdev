@@ -10,6 +10,6 @@ class Transaksi extends Model
     protected $table = "transaksi";
     protected $primaryKey = "id";
     protected $fillable = [
-        'id', 'nama', 'alamat', 'email', 'gambar'
+        'id', 'nama', 'alamat', 'email','produk', 'jumlah', 'gambar'
     ];
 }
