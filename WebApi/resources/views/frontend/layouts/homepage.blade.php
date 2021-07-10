@@ -57,26 +57,25 @@
          </div>
       </div>
     <br><br><br>
-    
-        <div class="judul-card bg-light" id="informasi">
-            <h1 class="display-4">Informasi</h1>
-            <hr>
-            <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img src="{{asset('assets/img/background.jpg')}}" class="img-thumbnail" alt="..."></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Petani Sukses</a>
-                </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="btn btn-outline-success">Baca</small>
-              </div>
+   
+    @foreach ($dtInformasi as $item)
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h5><b>{{ $item->judul }}</b></h5>
+                        <p>{{ $item->caption}}</p>
+                        <a href="{{ url('detailinformasi', $item->id) }}" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </div>
+@endforeach
 
-    </div> 
       <div class="best-features about-features">
       <div class="container">
         <div class="row">

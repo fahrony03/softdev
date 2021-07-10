@@ -23,6 +23,12 @@ class DokumentasiController extends Controller
         return view('frontend.layouts.dokumentasi',compact('dtDokumentasi'));
     }
 
+    public function detaildokumentasi($id)
+    {
+        $dok = Dokumentasi::findorfail($id);
+        return view('frontend.layouts.detail_dokumentasi', compact('dok'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -65,7 +71,7 @@ class DokumentasiController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
