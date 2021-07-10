@@ -21,6 +21,18 @@ class InformasiController extends Controller
         $dtInformasi = Informasi::latest()->get();
         return view('frontend.layouts.informasi',compact('dtInformasi'));
     }
+
+    public function artikelhome()
+    {
+        $dtInformasi = Informasi::latest()->get();
+        return view('frontend.layouts.homepage',compact('dtInformasi'));
+    }
+
+    public function detailinformasi($id)
+    {
+        $dok = Informasi::findorfail($id);
+        return view('frontend.layouts.detail_informasi', compact('dok'));
+    }
     /**
      * Show the form for creating a new resource.
      *

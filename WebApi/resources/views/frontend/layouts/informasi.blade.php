@@ -25,23 +25,23 @@
     <div class="judul-card bg-light">
         <h1 class="display-4">Informasi Pertanian</h1>
         <hr>
-    
-
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
-                <div class="card h-100">
-                    <img src="{{asset('assets/img/loginimage.jpeg')}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <h5><b>Cara mudah bertani agar sukses dengan cepat</b></h5>
-                        <a href="/detail_informasi" class="btn btn-outline-success">Baca</a>
+    @foreach ($dtInformasi as $item)
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>{{ $item->judul }}</b></h5>
+                            <p>{{ $item->caption}}</p>
+                            <a href="{{ url('detailinformasi', $item->id) }}" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        </div>
-        </div>
     </div>
+
+        @endforeach
     @endsection

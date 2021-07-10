@@ -17,7 +17,7 @@ class CreateInformasisTable extends Migration
             $table->id();
             $table->string('judul', 100);
             $table->string('caption', 100);
-            $table->string('konten', 1000);
+            $table->text('konten');
             $table->string('gambar', 100);
             $table->timestamps();
         });
