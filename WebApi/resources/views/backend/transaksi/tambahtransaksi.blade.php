@@ -34,9 +34,15 @@
                     <input name="alamat" type="text" id="alamat" class="form-control" placeholder="Alamat">
                 </div>
                 <div class="form-group">
-                  <textarea name="email" id="email" class="form-control" cols="30" placeholder="Content" rows="10"></textarea>
+                  <input name="email" id="email" class="form-control" cols="30" placeholder="Email" rows="10">
                     {{-- <input name="konten" type="text" id="konten" class="form-control" placeholder="Content"> --}}
                 </div>
+                <div class="form-group">
+                  <input name="produk" type="text" id="produk" class="form-control" placeholder="Produk">
+              </div>
+              <div class="form-group">
+                <input name="jumlah" type="number" id="jumlah" class="form-control" placeholder="Jumlah">
+            </div>
                 <div class="form-group">
                     <input name="gambar" type="file" id="gambar">
                 </div>

@@ -18,6 +18,8 @@ class Transaksi extends Migration
             $table->string('nama', 100);
             $table->string('alamat', 100);
             $table->string('email', 100);
+            $table->string('produk', 100);
+            $table->string('jumlah', 100);
             $table->string('gambar', 100);
             $table->timestamps();
         });

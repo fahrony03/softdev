@@ -29,16 +29,35 @@
         <hr>
     
 
+        {{-- @foreach ($dtTransaksi as $item)
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>{{ $item->judul }}</b></h5>
+                            <p>{{ $item->caption}}</p>
+                            <a href="{{ url('detaildokumentasi', $item->id) }}" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+    
+    @foreach ($dtProduk as $item)
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
             <div class="col mb-4">
                 <div class="card h-100">
-                    <img src="{{asset('assets/img/sayur 4.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{ asset($item->sampul)}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Wortel Organik segar 1 kilogram</h5>
+                        <h5 class="card-title">{{ $item->judul }}</h5>
+                        <p><b>{{ $item->deskripsi }}</b></p>
                         <span class="badge badge-success">discount 50%</span>
                         <p class="card-text text-justify">
-                            <b>Rp 10.000</b>
+                            <b>{{ $item->harga }}</b>
                         </p>
 
                         <a href="detailbelanja_satu.php" class="btn btn-outline-success">Beli</a>
@@ -48,4 +67,5 @@
         </div>
     </div>
 </div>
+@endforeach
     @stop

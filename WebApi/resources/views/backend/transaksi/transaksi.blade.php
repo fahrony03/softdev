@@ -33,9 +33,11 @@
                 <table id="datapengguna" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Judul</th>
-                            <th>Caption</th>
-                            <th>Konten</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Email</th>
                             <th>Gambar</th>
                             <th>Aksi</th>
                         </tr>
@@ -45,6 +47,8 @@
                       <tr>
                           <td>{{ $item->nama }}</td>
                           <td>{{ $item->alamat }}</td>
+                          <td>{{ $item->produk }}</td>
+                          <td>{{ $item->jumlah }}</td>
                           <td>{{ $item->email }}</td>
                           <td><a href="{{ asset($item->gambar)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
                           <td>

@@ -92,7 +92,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     //main
     // Route::get('/homepage', [FrontendController ::class, 'homepage']);
 
-    Route::get('/produk', [FrontendController ::class, 'produk']);
+    // Route::get('/produk', [FrontendController ::class, 'produk']);
     Route::post('/simpanpengguna', 'PenggunaController@store')->name('simpanpengguna');
     Route::get('/contact', 'PenggunaController@tambah')->name('contact');
     Route::get('/detail_informasi', [FrontendController ::class, 'detail_informasi']);
@@ -106,7 +106,11 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     Route::get('/informasi', 'InformasiController@artikelinformasi')->name('informasis');
     Route::get('/detailinformasi/{id}', 'InformasiController@detailinformasi')->name('detailinformasi');
 
+    //homepage content
     Route::get('/homepage', 'InformasiController@artikelhome')->name('homepage');
 
-    
+    //transaksi
+    Route::get('/produk', 'ProdukController@produk')->name('produk');
+    Route::get('/detailproduk/{id}', 'ProdukController@detailproduk')->name('detailproduk');
+
 });

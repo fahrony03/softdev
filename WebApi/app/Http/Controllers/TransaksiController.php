@@ -48,6 +48,8 @@ class TransaksiController extends Controller
             $dtUpload->nama = $request->nama;
             $dtUpload->alamat = $request->alamat;
             $dtUpload->email = $request->email;
+            $dtUpload->produk = $request->produk;
+            $dtUpload->jumlah = $request->jumlah;
             $dtUpload->gambar =$namaFile;
 
             $nm->move(public_path().'/img',$namaFile);
@@ -96,6 +98,8 @@ class TransaksiController extends Controller
             'nama' => $request['nama'],
             'alamat' => $request['alamat'],
             'email' => $request['email'],
+            'produk' => $request['produk'],
+            'jumlah' => $request['jumlah'],
             'gambar' => $awal,
         ];
 

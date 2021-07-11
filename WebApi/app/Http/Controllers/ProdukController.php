@@ -18,6 +18,18 @@ class ProdukController extends Controller
         return view('backend.produk.DataProduk',compact('dtProduk'));
     }
 
+    public function produk()
+    {
+        $dtProduk = Produk::latest()->get();
+        return view('frontend.layouts.produk',compact('dtProduk'));
+    }
+
+    public function detailproduk($id)
+    {
+        $dok = Produk::findorfail($id);
+        return view('frontend.layouts.detail_dokumentasi', compact('dok'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
