@@ -23,7 +23,7 @@
                     <!--ubah dari bagian ini sesuai isi konten-->
                     <div class="card-body">
                         <form action="{{ url($dok->id)}}" method="post" enctype="multipart/form-data">
-                            <img src="{{ asset($dok->gambar)}}" alt="image">
+                            <img src="{{ asset($dok->sampul)}}" alt="image">
                             <br>
                             <h2>{{ $dok->judul}}</h2>
                             <hr>
