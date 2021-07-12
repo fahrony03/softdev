@@ -4,7 +4,7 @@
     <div class="row" style="background-color:white; padding:20px;">
     <div class="col-md-8">
         <form action="{{ url($dok->id)}}" method="post" enctype="multipart/form-data">
-            <img src="{{ asset($dok->sampul)}}"  class="card-img-top" alt="...">
+            <img src="{{ asset($dok->sampul)}}"  class="card-img-top img-responsive" alt="...">
         </div>
     
         <div class="col-md-4">
@@ -18,7 +18,7 @@
             <h5 class="card-text text-justify">
                 <b>Harga : Rp {{ $dok->harga }}</b>
             </h5>
-            <a href="../transaksi" class="btn btn-success float-right">Pesan</a>
+            <a href="/transaksis" class="btn btn-success float-right">Pesan</a>
         </form>
     
     </div>

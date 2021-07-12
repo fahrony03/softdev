@@ -51,7 +51,7 @@
         <div class="row row-cols-1 row-cols-md-3">
             <div class="col mb-4">
                 <div class="card h-100">
-                    <img src="{{ asset($item->sampul)}}" class="card-img-top" alt="...">
+                    <img src="{{ asset($item->sampul)}}" class="img-responsive" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ $item->judul }}</h5>
                         <p><b>{{ $item->deskripsi }}</b></p>

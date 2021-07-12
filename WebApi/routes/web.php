@@ -109,8 +109,10 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
     //homepage content
     Route::get('/homepage', 'InformasiController@artikelhome')->name('homepage');
 
-    //transaksi
+    //produk
     Route::get('/produk', 'ProdukController@produk')->name('produk');
     Route::get('/detailproduk/{id}', 'ProdukController@detailproduk')->name('detailproduk');
 
+    //Transaksi
+    Route::get('/transaksis', 'TransaksiController@datatransaksi')->name('transaksis');
 });
