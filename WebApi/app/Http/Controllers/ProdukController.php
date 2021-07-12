@@ -27,7 +27,7 @@ class ProdukController extends Controller
     public function detailproduk($id)
     {
         $dok = Produk::findorfail($id);
-        return view('frontend.layouts.detail_dokumentasi', compact('dok'));
+        return view('frontend.layouts.detail_produk', compact('dok'));
     }
 
     /**

@@ -59,8 +59,7 @@
                         <p class="card-text text-justify">
                             <b>{{ $item->harga }}</b>
                         </p>
-
-                        <a href="detailbelanja_satu.php" class="btn btn-outline-success">Beli</a>
+                        <a href="{{ url('detailproduk', $item->id) }}" type="button" class="btn btn-outline-success"><i>Lihat</i></a>
                     </div>
                 </div>
             </div>
