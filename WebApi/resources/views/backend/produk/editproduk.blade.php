@@ -38,7 +38,7 @@
                       <span class="badge badge-info">Ekstensi JPG | JPEG | PNG</span>
                     </div>
                     <div class="form-group">
-                        <img src="{{ asset('img/'. $prod->sampul)}}" height="10%" width="50%" alt="">
+                        <img src="{{ asset($prod->sampul)}}" height="10%" width="50%" alt="">
                       </div>
                   </div>
                 <div class="form-group">
