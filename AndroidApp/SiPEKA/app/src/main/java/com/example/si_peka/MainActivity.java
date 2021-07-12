@@ -3,7 +3,11 @@ package com.example.si_peka;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.SearchView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
@@ -41,10 +45,49 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Untuk Menampilkan Toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater=getMenuInflater();
         inflater.inflate(R.menu.menutoolbar,menu);
+
+        MenuItem.OnActionExpandListener onActionExpandListener = new MenuItem.OnActionExpandListener() {
+            @Override
+            public boolean onMenuItemActionExpand(MenuItem item) {
+                Toast.makeText(MainActivity.this, "Search is Expanded", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            @Override
+            public boolean onMenuItemActionCollapse(MenuItem item) {
+                Toast.makeText(MainActivity.this, "Search is Collapse", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        };
+        menu.findItem(R.id.search).setOnActionExpandListener(onActionExpandListener);
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setQueryHint("Search Data here...");
+
         return true;
     }
+
+    //Untuk Click Listener Item Toolbar
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.favorite:
+                Toast.makeText(this, "Favorite is pressed", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.cart:
+                Toast.makeText(this, "Cart is pressed", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.setting:
+                Toast.makeText(this, "Setting is pressed", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
