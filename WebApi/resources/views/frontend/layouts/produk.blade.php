@@ -53,7 +53,7 @@
                 <div class="card h-100">
                     <img src="{{ asset($item->sampul)}}" class="img-responsive" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $item->judul }}</h5>
+                        <h5 class="card-title">{{ $item->namaproduk }}</h5>
                         <p><b>{{ $item->deskripsi }}</b></p>
                         <span class="badge badge-success">discount 50%</span>
                         <p class="card-text text-justify">
