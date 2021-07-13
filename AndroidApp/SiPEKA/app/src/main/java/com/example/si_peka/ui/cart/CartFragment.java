@@ -34,9 +34,9 @@ public class CartFragment extends Fragment {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_cart);
+        gridItemActivity.setContentView(R.layout.fragment_cart);
 
         gridView = gridView.findViewById(R.id.gridview);
 
