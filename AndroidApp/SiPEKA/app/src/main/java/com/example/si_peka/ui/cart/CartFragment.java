@@ -45,7 +45,7 @@ public class CartFragment extends Fragment {
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long i) {
+            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 Intent intent = new Intent(gridItemActivity.getApplicationContext(), GridItemActivity.class);
                 intent.putExtra("name", sayurNames[i]);
                 intent.putExtra("image", sayurImages[i]);
