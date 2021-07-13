@@ -115,4 +115,5 @@ Route::group(['middleware' => ['auth', 'ceklevel:user']], function(){
 
     //Transaksi
     Route::get('/transaksis', 'TransaksiController@datatransaksi')->name('transaksis');
+    Route::post('/bayar', 'TransaksiController@bayar')->name('bayar');
 });

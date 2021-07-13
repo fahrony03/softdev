@@ -20,7 +20,7 @@ class TransaksiController extends Controller
     public function datatransaksi()
     {
         $dtTransaksi = Transaksi::latest()->get();
-        return view('frontend.layouts.transaksi',compact('dtTransaksi'));
+        return view('frontend.layouts.transaksiuser',compact('dtTransaksi'));
     }
 
     /**
@@ -59,6 +59,26 @@ class TransaksiController extends Controller
 
     }
 
+
+    public function bayar(Request $request)
+    {
+        $nm = $request->gambar;
+        $namaFile = "http://127.0.0.1:8000/img/".$nm->getClientOriginalName();
+
+            $dtUpload = new transaksi;
+            $dtUpload->nama = $request->nama;
+            $dtUpload->alamat = $request->alamat;
+            $dtUpload->email = $request->email;
+            $dtUpload->produk = $request->produk;
+            $dtUpload->jumlah = $request->jumlah;
+            $dtUpload->gambar =$namaFile;
+
+            $nm->move(public_path().'/img',$namaFile);
+            $dtUpload->save();
+
+            return redirect('transaksis');
+
+    }
     /**
      * Display the specified resource.
      *
