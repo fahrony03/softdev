@@ -32,11 +32,11 @@ public class CartFragment extends Fragment {
     String[] sayurNames = {"Sayur1", "Sayur2", "Sayur3", "Sayur4", "Sayur5", "Sayur6"};
     int[] sayurImages = {R.drawable.sayur1, R.drawable.sayur2, R.drawable.sayur3, R.drawable.sayur4, R.drawable.sayur5, R.drawable.sayur6,};
 
-    @SuppressLint("MissingSuperCall")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        gridItemActivity.setContentView();
+        setContentView(R.layout.fragment_cart);
 
         gridView = gridView.findViewById(R.id.gridview);
 
@@ -45,10 +45,10 @@ public class CartFragment extends Fragment {
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int i, long i) {
                 Intent intent = new Intent(gridItemActivity.getApplicationContext(), GridItemActivity.class);
-                intent.putExtra("name", sayurNames[1]);
-                intent.putExtra("image", sayurImages[1]);
+                intent.putExtra("name", sayurNames[i]);
+                intent.putExtra("image", sayurImages[i]);
                 startActivity(intent);
             }
         });
@@ -61,24 +61,25 @@ public class CartFragment extends Fragment {
         }
 
         @Override
-        public Object getItem(int position) {
+        public Object getItem(int i) {
             return null;
         }
 
         @Override
-        public long getItemId(int position) {
+        public long getItemId(int i) {
             return 0;
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int i, View convertView, ViewGroup parent) {
             View view = getLayoutInflater().inflate(R.layout.baris_data, null);
 
             TextView name = view.findViewById(R.id.sayur);
             ImageView image = view.findViewById(R.id.image);
 
-            name.setText(sayurNames[1]);
-            image.setImageResource(sayurImages[1]);
+            name.setText(sayurNames[i]);
+            image.setImageResource(sayurImages[i]);
             return view;
         }
+    }
 }
