@@ -76,7 +76,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="50dp"
-            android:text="Klik Disini" />
+            android:text="Baca Disini" />
 
 
     </com.google.android.material.card.MaterialCardView>
