@@ -9,7 +9,6 @@
     tools:context=".ui.home.HomeFragment"
     android:layout_marginTop="55dp">
 
-
         <!--header-->
         <LinearLayout
             android:background="@drawable/ic_header"
@@ -88,6 +87,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/ktg1"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_cardmenu"
@@ -475,6 +475,7 @@
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/cardshop"
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:layout_width="match_parent"
