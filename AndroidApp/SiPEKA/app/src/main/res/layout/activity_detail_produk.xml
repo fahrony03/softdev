@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailProduk">
-
-    <TextView
-        android:text="Ini Halaman Detail Produk"
+    <!--Gambar-->
+    <ImageView
+        android:id="@+id/sayur"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
-
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/sayur1" />
+    <!--Bayam-->
+    <TextView
+        android:id="@+id/judulsayur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:text="Bayam"/>
+    <!--Deskripsi-->
+    <TextView
+        android:id="@+id/ktg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulsayur"
+        android:text="Sayuran Segar yang sangat lezat sekali cocok untuk hidup sehat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>
