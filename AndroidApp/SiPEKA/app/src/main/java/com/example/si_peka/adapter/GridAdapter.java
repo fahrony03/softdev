@@ -25,133 +25,133 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
         super();
         mItems = new ArrayList<EndangeredItem>();
         EndangeredItem nama = new EndangeredItem();
-        nama.setName("Surat Al-Fatihah Ayat 1-7");
+        nama.setName("Sawi");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur1);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Wortel");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur2);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Terong");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur3);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Bayam");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur4);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Kacang Tanah");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur5);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Tomat");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur6);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Sawi");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur1);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Wortel");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur2);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Terong");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur3);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Bayam");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur4);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Kacang Tanah");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur5);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Tomat");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur6);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Sawi");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur1);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Wortel");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur2);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Terong");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur3);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Bayam");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur4);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Kacang Tanah");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur5);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Tomat");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur6);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Sawi");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur1);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Maidah Ayat 1-10");
+        nama.setName("Wortel");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur2);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Al-Baqoroh Ayat 1-10");
+        nama.setName("Terong");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur3);
         mItems.add(nama);
 
         nama = new EndangeredItem();
-        nama.setName("Surat Yasin Ayat 1-100");
+        nama.setName("Bayam");
         nama.setPrice("10.000");
         nama.setThumbnail(R.drawable.sayur4);
         mItems.add(nama);
