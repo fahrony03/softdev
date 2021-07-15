@@ -1,85 +1,45 @@
 package com.example.si_peka.ui.cart;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.si_peka.GridItemActivity;
 import com.example.si_peka.R;
-import com.example.si_peka.databinding.FragmentCartBinding;
+import com.example.si_peka.adapter.GridAdapter;
+
+
+/**
+ * Created by Ujang Wahyu on 24/01/2017.
+ */
 
 public class CartFragment extends Fragment {
-
-    //    private CartViewModel cartViewModel;
-    private FragmentCartBinding binding;
-    private GridItemActivity gridItemActivity;
-
-    GridView gridView;
-    String[] sayurNames = {"Sayur1", "Sayur2", "Sayur3", "Sayur4", "Sayur5", "Sayur6"};
-    int[] sayurImages = {R.drawable.sayur1, R.drawable.sayur2, R.drawable.sayur3, R.drawable.sayur4, R.drawable.sayur5, R.drawable.sayur6,};
-
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        gridItemActivity.setContentView(R.layout.fragment_cart);
-
-        gridView = gridView.findViewById(R.id.gridview);
-
-        CustomAdapter customAdapter = new CustomAdapter();
-        gridView.setAdapter(customAdapter);
-
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-                Intent intent = new Intent(gridItemActivity.getApplicationContext(), GridItemActivity.class);
-                intent.putExtra("name", sayurNames[i]);
-                intent.putExtra("image", sayurImages[i]);
-                startActivity(intent);
-            }
-        });
+        RecyclerView mRecyclerView;
+    RecyclerView.LayoutManager mLayoutManager;
+    RecyclerView.Adapter mAdapter;
+    public CartFragment() {
+        // Required empty public constructor
     }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
 
-    private class CustomAdapter extends BaseAdapter {
-        @Override
-        public int getCount() {
-            return sayurImages.length;
-        }
+        View view = inflater.inflate(R.layout.fragment_cart, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerView.setHasFixedSize(true);
 
-        @Override
-        public Object getItem(int i) {
-            return null;
-        }
+        mLayoutManager  = new GridLayoutManager(getActivity(),2);
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
-        @Override
-        public long getItemId(int i) {
-            return 0;
-        }
+        mAdapter = new GridAdapter();
+        mRecyclerView.setAdapter(mAdapter);
 
-        @Override
-        public View getView(int i, View convertView, ViewGroup parent) {
-            View view = getLayoutInflater().inflate(R.layout.baris_data, null);
-
-            TextView name = view.findViewById(R.id.sayur);
-            ImageView image = view.findViewById(R.id.image);
-
-            name.setText(sayurNames[i]);
-            image.setImageResource(sayurImages[i]);
-            return view;
-        }
+        return view ;
     }
 }

@@ -38,7 +38,7 @@ public class HomeFragment extends Fragment {
         ktg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"klik me", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"DetailProduk", Toast.LENGTH_SHORT).show();
 
                 Intent gopindah = new Intent(getActivity(), DetailProduk.class);
                 startActivity(gopindah);
