@@ -15,4 +15,15 @@
     <color name="primaryDark">#73AF03</color>
     <color name="colorPrimary">#99F386</color>
 
+    <color name="address">#486C49</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#6DA16F</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#66B369</color>
+    <color name="gradStart">#357A38</color>
+    <color name="followersBg">#64B167</color>
+    <color name="followingBg">#4C984F</color>
+    <color name="grey">#E5E5E5</color>
+
 </resources>

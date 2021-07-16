@@ -27,5 +27,4 @@
         android:id="@+id/setting"
         app:showAsAction="never"/>
 
-
 </menu>
