@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile.ProfileFragment">
+    tools:context=".ui.profile.ProfileFragment"
+    android:layout_marginTop="55dp">
 
     <RelativeLayout
         android:id="@+id/rellay1"
@@ -58,15 +59,15 @@
             android:textColor="@color/address"
             android:textSize="14sp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_settings" />
+<!--        <ImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:src="@drawable/ic_settings" />-->
 
     </RelativeLayout>
 

@@ -9,7 +9,6 @@
     tools:context=".ui.home.HomeFragment"
     android:layout_marginTop="55dp">
 
-
         <!--header-->
         <LinearLayout
             android:background="@drawable/ic_header"
@@ -57,7 +56,7 @@
                     android:layout_marginTop="10dp"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:text="Bayam Segar"
+                    android:text="Sawi Segar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
@@ -88,6 +87,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/ktg1"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_cardmenu"
@@ -97,7 +97,7 @@
                     android:padding="20dp">
 
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="22dp"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
@@ -475,6 +475,7 @@
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/cardshop"
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:layout_width="match_parent"
