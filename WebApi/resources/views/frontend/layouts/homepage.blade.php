@@ -57,7 +57,9 @@
          </div>
       </div>
     <br><br><br>
-   
+    <div class="judul-card bg-light">
+        <h1 class="display-4">Informasi</h1>
+        <hr>
     @foreach ($dtInformasi as $item)
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">

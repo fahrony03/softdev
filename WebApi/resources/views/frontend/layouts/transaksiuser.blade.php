@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
 
+<div class="container">
 <div class="card">
     <div class="card-body">
     <h1>Form Pembayaran</h1>
@@ -19,10 +20,13 @@
       <label for="title">Jumlah :</label><br>
       <input name="jumlah" required type="number" id="jumlah" class="form-control" placeholder="Jumlah"><br><br>
       <input type="submit" class="btn btn-success" value="Upload">
-      <a href="berhasil.php" class="btn btn-danger">Kembali</a>
+      <br>
+      <p><i>*Jika data yang diisi tidak lengkap kami tidak akan melakukan pengiriman barang</i></p>
     </form>
     </div>
   </div>
-  </div>
+</div>
+</div>
+<br>
 
 @endsection
