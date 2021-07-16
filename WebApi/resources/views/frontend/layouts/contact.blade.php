@@ -3,6 +3,7 @@
 <div class="container">
 <div class="card">
 <div class="container" style="padding-top:40px; padding-bottom:40px; padding-right:115px; padding-left:100px">
+    <h2>Contact</h2><br>
     <form action="{{ route('simpanpengguna')}}" method="post">
         {{ csrf_field() }}
         <div class="form-group">
