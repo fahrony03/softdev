@@ -9,7 +9,7 @@
                         <div class="text-bg">
                            <h1 id="home"><font color="green">DOKUMENTASI</font></h1>
                            <p>Selamat Datang di Halaman Dokumentasi. Dimana nantinya pada halaman ini pembeli bisa melihat 
-                           kegiatan proses panen hingga proses penjualan ke pelanggan.</p>>
+                           kegiatan proses panen hingga proses penjualan ke pelanggan.</p>
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">

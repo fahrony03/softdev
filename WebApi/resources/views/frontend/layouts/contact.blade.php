@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
-<b>CONTACT</b>
+<div class="container">
+<div class="card">
 <div class="container" style="padding-top:40px; padding-bottom:40px; padding-right:115px; padding-left:100px">
     <form action="{{ route('simpanpengguna')}}" method="post">
         {{ csrf_field() }}
@@ -28,8 +29,8 @@
         </div>
     </div>
     </div>
-
-
+</div>
+</div>
     </div>
 
     </div>
@@ -38,4 +39,5 @@
     </div>
     </div>
     </div>
+    <br>
     @stop

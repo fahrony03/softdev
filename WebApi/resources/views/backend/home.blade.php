@@ -82,7 +82,7 @@
                   <div class="inner">
                     <h3>150</h3>
 
-                    <p>New Orders</p>
+                    <p>Transaksi</p>
                   </div>
                   <div class="icon">
                     <i class="fas fa-shopping-cart"></i>
@@ -97,12 +97,12 @@
                   <div class="inner">
                     <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                    <p>Bounce Rate</p>
+                    <p>Dokumentasi</p>
                   </div>
                   <div class="icon">
                     <i class="fa fa-bookmark"></i>
                   </div>
-                  <a href="#" class="small-box-footer">
+                  <a href="/dokumentasi" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                   </a>
                 </div>
@@ -112,7 +112,7 @@
                     <div class="inner">
                       <h3>44</h3>
 
-                      <p>User Registrations</p>
+                      <p>Data Pengguna</p>
                     </div>
                     <div class="icon">
                       <i class="fas fa-user-plus"></i>
@@ -125,12 +125,12 @@
                     <div class="inner">
                       <h3>65</h3>
 
-                      <p>Unique Visitors</p>
+                      <p>Informasi</p>
                     </div>
                     <div class="icon">
                       <i class="fas fa-chart-pie"></i>
                     </div>
-                    <a href="#" class="small-box-footer">
+                    <a href="/informasis" class="small-box-footer">
                       More info <i class="fas fa-arrow-circle-right"></i>
                     </a>
                   </div>
