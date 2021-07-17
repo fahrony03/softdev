@@ -46,7 +46,8 @@
                           <td>{{ $item->judul }}</td>
                           <td>{{ $item->caption }}</td>
                           <td>{{ $item->konten }}</td>
-                          <td><a href="{{ asset('img/'. $item->gambar)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
+                          {{-- <td><a href="{{ asset('img/'. $item->gambar)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td> --}}
+                          <td><a href="{{ asset($item->gambar)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
                           <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                               <a href="{{ url('editinformasi', $item->id) }}" type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>

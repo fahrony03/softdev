@@ -121,8 +121,53 @@
                         </div>
                     </div>
                 </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
       <div class="best-features about-features">
       <div class="container">
         <div class="row">

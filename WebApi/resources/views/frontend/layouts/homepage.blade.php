@@ -60,12 +60,13 @@
     <div class="judul-card bg-light">
         <h1 class="display-4">Informasi</h1>
         <hr>
-    @foreach ($dtInformasi as $item)
+    
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
+            @foreach ($dtInformasi as $item)
             <div class="col mb-4">
-                <div class="card h-100">
-                    <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="Thumbnail">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>{{ $item->judul }}</b></h5>
@@ -74,9 +75,10 @@
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
-@endforeach
+
 
       <div class="best-features about-features">
       <div class="container">
