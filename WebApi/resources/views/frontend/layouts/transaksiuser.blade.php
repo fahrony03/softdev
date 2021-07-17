@@ -10,9 +10,9 @@
     <label for="gambar">Upload Bukti Transaksi</label>
       <input name="gambar" type="file" id="gambar"><br><br>
       <label for="title">Nama :</label><br>
-      <input name="nama" required type="text" id="nama" class="form-control" placeholder="Nama"><br><br>
+      <input name="nama" required type="text" id="nama" class="form-control" readonly value="{{ auth()->user()->name }}"><br><br>
       <label for="title">Alamat :</label><br>
-      <input name="alamat" required type="text" id="alamat" class="form-control" placeholder="Alamat"><br><br>
+      <input name="alamat" required type="text" id="alamat" class="form-control" placeholder="Alamat Lengkap"><br><br>
       <label for="title">Email :</label><br>
       <input name="email" required type="email" id="email" class="form-control" placeholder="Email"><br><br>
       <label for="title">Produk :</label><br>

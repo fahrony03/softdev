@@ -27,9 +27,6 @@
         </div>
         <div class="col-lg-12">
             <div class="shadow p-3 mb-4 bg-white rounded">
-                <div class="pb-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahGuru"><i class="fas fa-plus"></i> Tambah Data</button>
-                </div>
                 <table id="datapengguna" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
