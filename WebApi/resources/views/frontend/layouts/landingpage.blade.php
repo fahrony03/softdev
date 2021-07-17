@@ -15,16 +15,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class="">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/homepage"><img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger"  href="#">Home<span class="sr-only">(current)</span></a>
@@ -106,7 +105,7 @@
       </div>
     <br><br><br>
     <div class="judul-card bg-light">
-        <h1 class="display-4">Informasi</h1>
+        <h1 class="display-4" id="informasi">Informasi</h1>
         <hr>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3">

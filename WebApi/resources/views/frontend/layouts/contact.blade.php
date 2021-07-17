@@ -19,12 +19,9 @@
             <input name="password" required type="text" id="Password" class="form-control" placeholder="Komentar">
         </div>
         <div class="form-group">
-        <button type="submit" class="btn btn-success">Kirim Komentar</button>
+        <button type="submit" class="btn btn-success">Kirim</button>
         </div>
     </form>
-                <div class="text-center">
-                    <a class="small" href="https://chat.whatsapp.com/Kb1NTOu8YlNJRbVjuu7fvb">Contact Via Whatsapp</a>
-                </div>
                 </div>
             </div>
         </div>
