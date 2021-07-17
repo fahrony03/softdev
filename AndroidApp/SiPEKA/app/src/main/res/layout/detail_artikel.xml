@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/appbar" />
+
+    <ImageView
+        android:id="@+id/imgtani"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:background="@drawable/sayur1"/>
+
+    <TextView
+        android:id="@+id/pertanian_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="470dp"
+        android:text="Sektor Pertanian Disebut Jadi Penyelamat Ekonomi saat Pandemi"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/detail_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pertanian_1"
+        android:text="Dalam rapat kerja bersama jajaran Kementan, Wakil Ketua Komite II DPD RI, Abdullah Puteh menyampaikan sektor pertanian sejauh ini terbukti mampu menjadi penyelamat anjloknya ekonomi nasional akibat pandemi COVID-19 yang masih berkepanjangan."
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
