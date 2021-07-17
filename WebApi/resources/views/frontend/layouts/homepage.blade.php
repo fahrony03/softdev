@@ -66,7 +66,7 @@
             @foreach ($dtInformasi as $item)
             <div class="col mb-4">
                 <div class="card">
-                    <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="Thumbnail">
+                    <img src="{{ asset($item->gambar)}}" class="img-thumbnail" alt="responsive image">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>{{ $item->judul }}</b></h5>
