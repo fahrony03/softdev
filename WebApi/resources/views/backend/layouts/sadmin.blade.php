@@ -212,7 +212,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li class="nav-item">
                 <a href="/user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data User (ini sampel)</p>
+                  <p>Data User</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -241,23 +241,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <p>Informasi</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="/transaksi" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Transaksi</p>
-            </a>
-          </li>
         </ul>
       </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

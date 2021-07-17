@@ -42,7 +42,6 @@
                       <a class="nav-link js-scroll-trigger" href="#Dokumentasi">Dokumentasi</a>
                   </li>
                 </ul>
-                </ul>
                 <span class="navbar-text">
                     <a href="/login" class="btn btn-warning">Login</a>
                 </span>
@@ -79,51 +78,96 @@
             <h1 class="display-4" id="keunggulan">Keunggulan</h1>
             <hr>
             <div id="service" class="three_box">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="Soft-box">
-                     <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
-                     <h3>Belanja</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="Soft-box">
-                     <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
-                     <h3>Pembayaran</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="Soft-box">
-                     <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
-                     <h3>Pengiriman</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+                <div class="container">
+                    <div class="row">
+                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                          <div class="Soft-box">
+                             <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
+                             <h3>Belanja</h3>
+                             <p>Kami mempermudah proses belanja kebutuhan anda, terumama dalam mencari bahan sayuran segar dan organik</p>
+                          </div>
+                       </div>
+                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                          <div class="Soft-box">
+                             <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
+                             <h3>Pembayaran</h3>
+                             <p>Kami menyediakan opsi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
+                          </div>
+                       </div>
+                       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                          <div class="Soft-box">
+                             <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
+                             <h3>Pengiriman</h3>
+                             <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
       </div>
     <br><br><br>
-        <div class="judul-card bg-light" id="informasi">
-            <h1 class="display-4" id="informasi">Informasi</h1>
-            <hr>
-            <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img src="{{asset('assets/img/background.jpg')}}" class="img-thumbnail" alt="..."></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Petani Sukses</a>
-                </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="btn btn-outline-success">Baca</small>
-              </div>
+    <div class="judul-card bg-light">
+        <h1 class="display-4">Informasi</h1>
+        <hr>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <h5><b>Cara Suskes Bertani</b></h5>
+                            <p>Suskes Bertani di usia Muda</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-    </div> 
+        </div>
+        
       <div class="best-features about-features">
       <div class="container">
         <div class="row">
@@ -142,7 +186,8 @@
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+              <p>Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.
+                Yang memiliki keunggulan yaitu memiliki harga yang lebih miring dari pada yang lainnya, sayuran kami dijamin fresh karena bekerja sama langsung dengan SMK Pertanian Pembangunan Negeri 1 Tegalampel Bondowoso, Pelanggan hanya perlu santai dirumah pesanan akan kami antar</p>
             </div>
           </div>
         </div>
@@ -219,29 +264,7 @@
                               <p>Website pemasaran hasil pertanian SMKPP Negeri 1 Tegalampel.</p>
                           </div>
                           <hr class="clearfix w-100 d-md-none pb-3">
-                          <div class="col-md-3 mb-md-0 mb-3">
-                              <!-- Links -->
-                              <h5 class="text-uppercase">Info</h5>
-                              <ul class="list-unstyled">
-                              <li>
-                                  <a href="https://www.alodokter.com/berbagai-manfaat-sayuran-hijau-untuk-kesehatan#:~:text=Mengonsumsi%20sayuran%20hijau%2C%20seperti%20bayam,dalam%20tubuh%2C%20termasuk%20radang%20sendi."
-                                      target="_blank">1. Menanam Tumbuhan Dirumah</a>
-                                  </li>
-                                  <li>
-                                      <a href="https://www.alodokter.com/berbagai-manfaat-sayuran-hijau-untuk-kesehatan"
-                                      target="_blank">2. Khasiat Sayuran Hijau</a>
-                                  </li>
-                                  <li>
-                                  <a href="www.alodokter.com/manfaat-buah-untuk-kesehatan-yang-perlu-anda-ketahui"
-                                      target="_blank">3. Manfaat Mengonsumsi Buah</a>
-                                      
-                                  </li>
-                                  <li>
-                                  <a href="www.sehatq.com/artikel/menelisik-menu-diet-gm"
-                                      target="_blank">4. Diet yang Sehat</a>
-                                  </li>
-                              </ul>
-                          </div>
+                          
                           <div class="col-md-3 mb-md-0 mb-3">
                               <h5 class="text-uppercase">Contact</h5>
                               <ul class="list-unstyled">

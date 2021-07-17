@@ -27,7 +27,7 @@ Route::get('/', 'FrontendController@index');
 
 //backend admin view controller
 Route::get('/sadmin', [BackendController ::class, 'home']);
-Route::get('/user', [BackendController ::class, 'user']);
+// Route::get('/user', [BackendController ::class, 'user']);
 // Route::get('user', 'UsersController@index')->name('user');
 
 //akses login
@@ -70,6 +70,10 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function(){
     Route::get('/hapusinformasi/{id}', 'InformasiController@destroy')->name('hapusinformasi');
     Route::get('/editinformasi/{id}', 'InformasiController@edit')->name('editinformasi');
     Route::post('/updateinformasi/{id}', 'InformasiController@update')->name('updateinformasi');
+
+    //user
+    Route::get('/user', 'UsersController@datauser')->name('datauser');
+    Route::get('/hapususer/{id}', 'UsersController@hapus')->name('hapususer');
 
     // routeProduk
     Route::get('/dataproduk', 'ProdukController@index')->name('dataproduk');

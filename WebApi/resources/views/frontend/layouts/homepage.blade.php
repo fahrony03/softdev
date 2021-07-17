@@ -36,34 +36,37 @@
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
                      <h3>Belanja</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami mempermudah proses belanja kebutuhan anda, terumama dalam mencari bahan sayuran segar dan organik</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
                      <h3>Pembayaran</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami menyediakan opi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
                      <h3>Pengiriman</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
                   </div>
                </div>
             </div>
          </div>
       </div>
     <br><br><br>
-   
-    @foreach ($dtInformasi as $item)
+    <div class="judul-card bg-light">
+        <h1 class="display-4">Informasi</h1>
+        <hr>
+    
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
+            @foreach ($dtInformasi as $item)
             <div class="col mb-4">
-                <div class="card h-100">
-                    <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="{{ asset($item->gambar)}}" class="img-thumbnail" alt="responsive image">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>{{ $item->judul }}</b></h5>
@@ -72,9 +75,10 @@
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
-@endforeach
+
 
       <div class="best-features about-features">
       <div class="container">

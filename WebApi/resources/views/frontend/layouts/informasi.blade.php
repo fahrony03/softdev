@@ -25,9 +25,9 @@
     <div class="judul-card bg-light">
         <h1 class="display-4">Informasi Pertanian</h1>
         <hr>
-    @foreach ($dtInformasi as $item)
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
+                @foreach ($dtInformasi as $item)
                 <div class="col mb-4">
                     <div class="card h-100">
                         <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
@@ -39,9 +39,10 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>
 
-        @endforeach
+        
     @endsection

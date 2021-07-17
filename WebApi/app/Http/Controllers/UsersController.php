@@ -31,6 +31,12 @@ class UsersController extends Controller
         // return view('backend.user', compact('data'));
     }
 
+    public function datauser()
+    {
+        $dtUser = Users::latest()->get();
+        return view('backend.user',compact('dtUser'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -169,5 +175,12 @@ class UsersController extends Controller
                 'massage'=>"Failed " . $e->errorInfo
             ]);
         }
+    }
+
+    public function hapus($id)
+    {
+        $peng = Users::findorfail($id);
+        $peng->delete();
+        return redirect('user');
     }
 }

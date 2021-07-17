@@ -46,9 +46,10 @@
             </div>
         </div> --}}
     
-    @foreach ($dtProduk as $item)
+    
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
+            @foreach ($dtProduk as $item)
             <div class="col mb-4">
                 <div class="card h-100">
                     <img src="{{ asset($item->sampul)}}" class="img-responsive" alt="...">
@@ -63,8 +64,8 @@
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>
-@endforeach
-    @stop
+@stop

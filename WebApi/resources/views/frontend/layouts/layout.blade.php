@@ -19,7 +19,7 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"><img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class=""></a>
+          <a class="navbar-brand" href="/homepage"><img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,7 +41,7 @@
                     <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item active dropdown">
-                    <a class="nav-link" style="color:rgb(192, 91, 91);padding-top:10px;" href="#" data-toggle="dropdown">{{ auth()->user()->name }}<i class="fa fa-user fa-lg"></i></a>
+                    <a class="nav-link" style="color:rgb(252, 252, 252);padding-top:10px;" href="#" data-toggle="dropdown">{{ auth()->user()->name }}<i class="fa fa-user fa-lg"></i></a>
                         <ul class="dropdown-menu settings-menu dropdown-menu-right">
                             <a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-cog fa-lg"></i> Settings</a>
                             <li><a class="dropdown-item" href="../auth/profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
