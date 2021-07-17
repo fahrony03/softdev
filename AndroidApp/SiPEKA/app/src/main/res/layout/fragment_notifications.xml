@@ -37,7 +37,6 @@
                             android:adjustViewBounds="true"
                             android:cropToPadding="true"
                             android:src="@drawable/news" />
-
                 </LinearLayout>
         </LinearLayout>
 
@@ -46,4 +45,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>
