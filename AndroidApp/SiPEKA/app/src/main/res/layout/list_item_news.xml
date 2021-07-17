@@ -49,8 +49,8 @@
 
             <TextView
                 android:id="@+id/judul"
-                android:layout_width="397dp"
-                android:layout_height="101dp"
+                android:layout_width="396dp"
+                android:layout_height="74dp"
                 android:layout_below="@+id/img_thumbnail"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="bottom"
@@ -67,21 +67,9 @@
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="2dp"
                 android:text="Tanggal"
                 android:textColor="#F30202" />
-
-            <Button
-                android:id="@+id/tombol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/judul"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="-50dp"
-                android:backgroundTint="@color/primaryDark"
-                android:text="View All"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
 
 
         </RelativeLayout>
