@@ -36,21 +36,21 @@
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/belanja.png')}}"  /></i>
                      <h3>Belanja</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami mempermudah proses belanja kebutuhan anda, terumama dalam mencari bahan sayuran segar dan organik</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
                      <h3>Pembayaran</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami menyediakan opi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
                      <h3>Pengiriman</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
+                     <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
                   </div>
                </div>
             </div>
