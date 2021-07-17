@@ -5,10 +5,11 @@
 <div class="card">
     <div class="card-body">
     <h1>Form Pembayaran</h1>
+    <hr>
     <form action="{{ route('bayar')}}" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
     <label for="gambar">Upload Bukti Transaksi</label>
-      <input name="gambar" type="file" id="gambar"><br><br>
+      <input name="gambar" required type="file" id="gambar"><br><br>
       <label for="title">Nama :</label><br>
       <input name="nama" required type="text" id="nama" class="form-control" readonly value="{{ auth()->user()->name }}"><br><br>
       <label for="title">Alamat :</label><br>
