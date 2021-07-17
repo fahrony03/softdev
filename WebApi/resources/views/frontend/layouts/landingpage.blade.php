@@ -91,7 +91,7 @@
                           <div class="Soft-box">
                              <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
                              <h3>Pembayaran</h3>
-                             <p>Kami menyediakan opi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
+                             <p>Kami menyediakan opsi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
                           </div>
                        </div>
                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
