@@ -7,13 +7,13 @@
     <form action="{{ route('simpanpengguna')}}" method="post">
         {{ csrf_field() }}
         <div class="form-group">
-            <input name="name" required type="text" id="name" class="form-control"  value="{{ auth()->user()->name }}">
+            <input name="name" required type="text" id="name" class="form-control" readonly  value="{{ auth()->user()->name }}">
         </div>
         <div class="form-group">
             <input name="username" required type="text" id="username" class="form-control" placeholder="Alamat">
         </div>
         <div class="form-group">
-            <input name="email" required type="email" id="email" class="form-control"  value="{{ auth()->user()->email }}">
+            <input name="email" required type="email" id="email" class="form-control" readonly value="{{ auth()->user()->email }}">
         </div>
         <div class="form-group">
             <input name="password" required type="text" id="Password" class="form-control" placeholder="Komentar">
