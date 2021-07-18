@@ -111,7 +111,7 @@
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 1.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 3.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 4.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 5.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>

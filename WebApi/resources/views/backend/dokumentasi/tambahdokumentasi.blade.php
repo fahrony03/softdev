@@ -21,7 +21,7 @@
   <div class="content">
       <div class="card card-info card-outline">
       <div class="card-header">
-          <h3>Tulis Artikel</h3>
+          <h3>Tulis Dokumentasi</h3>
       </div>
   
         <div class="card-body">
