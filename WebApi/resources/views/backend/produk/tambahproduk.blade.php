@@ -33,22 +33,22 @@
                 <div class="form-group">
                     <label for="foto">Foto Guru</label>
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile" name="gambar" required>
+                        <input type="file" required class="custom-file-input" id="customFile" name="gambar" required>
                         <label class="custom-file-label" for="customFile">Choose file</label>
                       <span class="badge badge-info">Ekstensi JPG | JPEG | PNG</span>
                     </div>
                   </div>
                 <div class="form-group">
-                    <input name="deskripsi" type="text" id="deskripsi" class="form-control" placeholder="Deskripsi Produk">
+                    <input name="deskripsi"required type="text" id="deskripsi" class="form-control" placeholder="Deskripsi Produk">
                 </div>
                 <div class="form-group">
-                    <input name="berat" type="number" id="berat" class="form-control" placeholder="Berat Produk">
+                    <input name="berat" type="number" required id="berat" class="form-control" placeholder="Berat Produk">
                 </div>
                 <div class="form-group">
-                    <input name="stok" type="number" id="stok" class="form-control" placeholder="Stok Produk">
+                    <input name="stok" type="number" required id="stok" class="form-control" placeholder="Stok Produk">
                 </div>
                 <div class="form-group">
-                    <input name="harga" type="text" id="harga" class="form-control" placeholder="Harga Produk">
+                    <input name="harga" type="text" id="harga" required class="form-control" placeholder="Harga Produk">
                 </div>
                 <div class="form-group">
                    <button type="submit" class="btn btn-success">Tambah Data</button>

@@ -24,7 +24,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link js-scroll-trigger" href="/homepage">Home</a>
                 </li>
@@ -72,7 +72,8 @@
                             <div class="col-md-6 mt-md-0 mt-3">
                                 <!-- Content -->
                                 <h5 class="text-uppercase">Si PEKA</h5>
-                                <p>Website pemasaran hasil pertanian SMKPP Negeri 1 Tegalampel.</p>
+                                <p>Si-PEKA adalah Sebuah website pertanian yang menyediakan informasi seputar
+                                    pertanian dan menyediakan produk pertanian.</p>
                             </div>
                             <hr class="clearfix w-100 d-md-none pb-3">
                             <div class="col-md-3 mb-md-0 mb-3">

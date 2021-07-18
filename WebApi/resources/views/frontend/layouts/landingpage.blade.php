@@ -15,16 +15,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class="">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/homepage"><img src="{{asset('assets/img/logo.png')}}" width="130" height="50" class=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger"  href="#">Home<span class="sr-only">(current)</span></a>
@@ -59,7 +58,7 @@
                         <div class="text-bg">
                            <h1 id="home"><font color="green">UNDUH APLIKASI</font></h1>
                            <h5><font color="green">dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
-                        , membeli berbagai produk kami dimana saja dan kapan saja lor.</font></h5>
+                        , membeli berbagai produk kami dimana saja dan kapan saja slurd.</font></h5><br>
                         <div><button type="button" class="btn btn-success">Get App</button></div>
                         </div>
                      </div>
@@ -98,7 +97,7 @@
                           <div class="Soft-box">
                              <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
                              <h3>Pengiriman</h3>
-                             <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
+                             <p>Kami menyediakan opsi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
                           </div>
                        </div>
                     </div>
@@ -106,13 +105,13 @@
       </div>
     <br><br><br>
     <div class="judul-card bg-light">
-        <h1 class="display-4">Informasi</h1>
+        <h1 class="display-4" id="informasi">Informasi</h1>
         <hr>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 1.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -134,7 +133,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 3.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -145,7 +144,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 4.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -156,7 +155,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/img/sayur 5.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>Cara Suskes Bertani</b></h5>
@@ -211,11 +210,11 @@
                     <div class="carousel-item active">
                         <img src="{{asset('assets/img/cover.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5>Pertanian</h5>
+                            <p>Menyajikan hal-hal seputar pertanian.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    {{-- <div class="carousel-item">
                         <img src="im{{asset('assets/img/cov.jpeg')}}g/sawi.jpeg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
@@ -225,10 +224,10 @@
                     <div class="carousel-item">
                         <img src="{{asset('assets/img/cov1.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5>Pertanian</h5>
+                            <p>Menyajikan hal-hal seputar pertanian.</p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

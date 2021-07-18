@@ -3,7 +3,8 @@
 <div class="container">
 <div class="card">
 <div class="container" style="padding-top:40px; padding-bottom:40px; padding-right:115px; padding-left:100px">
-    <h2>Kritik dan Saran</h2><br>
+    <h2>Kritik dan Saran</h2>
+    <hr>
     <form action="{{ route('simpanpengguna')}}" method="post">
         {{ csrf_field() }}
         <div class="form-group">
@@ -19,12 +20,27 @@
             <input name="password" required type="text" id="Password" class="form-control" placeholder="Komentar">
         </div>
         <div class="form-group">
-        <button type="submit" class="btn btn-success">Kirim Komentar</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Kirim</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hapus data</h5>
+                  </div>
+                  <div class="modal-body">
+                    Apakah anda yakin ingin mengirim masukan?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-success">Ya, Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {{-- <button type="submit" class="btn btn-success">Kirim</button> --}}
         </div>
     </form>
-                <div class="text-center">
-                    <a class="small" href="https://chat.whatsapp.com/Kb1NTOu8YlNJRbVjuu7fvb">Contact Via Whatsapp</a>
-                </div>
                 </div>
             </div>
         </div>
