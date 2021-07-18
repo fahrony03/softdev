@@ -33,7 +33,7 @@
                 <div class="form-group">
                     <label for="foto">Foto Sampul</label>
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile" name="gambar">
+                        <input type="file" required class="custom-file-input" id="customFile" name="gambar">
                         <label class="custom-file-label" for="customFile">Choose file</label>
                       <span class="badge badge-info">Ekstensi JPG | JPEG | PNG</span>
                     </div>
@@ -42,19 +42,37 @@
                       </div>
                   </div>
                 <div class="form-group">
-                    <input name="deskripsi" type="text" id="deskripsi" class="form-control" value="{{ $prod->deskripsi}}">
+                    <input name="deskripsi" required type="text" id="deskripsi" class="form-control" value="{{ $prod->deskripsi}}">
                 </div>
                 <div class="form-group">
-                    <input name="berat" type="number" id="berat" class="form-control" value="{{ $prod->berat}}">
+                    <input name="berat" required type="number" id="berat" class="form-control" value="{{ $prod->berat}}">
                 </div>
                 <div class="form-group">
-                    <input name="stok" type="number" id="stok" class="form-control" value="{{ $prod->stok}}">
+                    <input name="stok" required type="number" id="stok" class="form-control" value="{{ $prod->stok}}">
                 </div>
                 <div class="form-group">
-                    <input name="harga" type="text" id="harga" class="form-control" value="{{ $prod->harga}}">
+                    <input name="harga" required type="text" id="harga" class="form-control" value="{{ $prod->harga}}">
                 </div>
                 <div class="form-group">
-                   <button type="submit" class="btn btn-success">Update Data</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Kirim</button>
+            <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Ubah data</h5>
+                        </div>
+                        <div class="modal-body">
+                          Apakah anda yakin ingin mengubah data?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Batal</button>
+                          <button type="submit" class="btn btn-success">Update Data</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   {{-- <button type="submit" class="btn btn-success">Update Data</button> --}}
                 </div>
             </form>
         </div>

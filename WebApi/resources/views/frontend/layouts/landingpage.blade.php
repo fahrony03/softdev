@@ -97,7 +97,7 @@
                           <div class="Soft-box">
                              <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
                              <h3>Pengiriman</h3>
-                             <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
+                             <p>Kami menyediakan opsi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
                           </div>
                        </div>
                     </div>
