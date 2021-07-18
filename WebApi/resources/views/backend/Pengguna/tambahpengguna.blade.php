@@ -28,16 +28,16 @@
             <form action="{{ route('simpanpengguna')}}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <input name="name" type="text" id="name" class="form-control" placeholder="Nama">
+                    <input name="name" required type="text" id="name" class="form-control" placeholder="Nama">
                 </div>
                 <div class="form-group">
-                    <input name="username" type="text" id="username" class="form-control" placeholder="Alamat">
+                    <input name="username" required type="text" id="username" class="form-control" placeholder="Alamat">
                 </div>
                 <div class="form-group">
-                    <input name="email" type="number" id="email" class="form-control" placeholder="No hp">
+                    <input name="email" type="number" required id="email" class="form-control" placeholder="No hp">
                 </div>
                 <div class="form-group">
-                    <input name="password" type="text" id="Password" class="form-control" placeholder="Komentar">
+                    <input name="password" type="text" id="Password" required class="form-control" placeholder="Komentar">
                 </div>
                 <div class="form-group">
                    <button type="submit" class="btn btn-success">Tambah Data</button>
