@@ -1,7 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
     <div class="container">
-        <div class="card">
+        <div class="card shadow p-3">
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <script type='text/javascript'>

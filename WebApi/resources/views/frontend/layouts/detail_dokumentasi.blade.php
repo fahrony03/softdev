@@ -1,7 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
     <div class="container">
-        <div class="card">
+        <div class="card shadow p-3">
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <script type='text/javascript'>
@@ -23,7 +23,7 @@
                     <!--ubah dari bagian ini sesuai isi konten-->
                     <div class="card-body">
                         <form action="{{ url($dok->id)}}" method="post" enctype="multipart/form-data">
-                            <img src="{{ asset($dok->gambar)}}" alt="image">
+                            <img src="{{ asset($dok->gambar)}}" class="shadow">
                             <br>
                             <h2>{{ $dok->judul}}</h2>
                             <hr>
