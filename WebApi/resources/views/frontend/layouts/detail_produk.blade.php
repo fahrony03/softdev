@@ -1,10 +1,11 @@
 @extends('frontend.layouts.layout')
 @section('content')
-<div class="container" style="padding-top:140px; padding-bottom:140px;">
+<div class="container">
+    <div class="card shadow p-3">
     <div class="row" style="background-color:white; padding:20px;">
     <div class="col-md-8">
         <form action="{{ url($dok->id)}}" method="post" enctype="multipart/form-data">
-            <img src="{{ asset($dok->sampul)}}"  class="card-img-top img-responsive" alt="...">
+            <img src="{{ asset($dok->sampul)}}"  class="img-thumbnail" alt="responsive image">
         </div>
     
         <div class="col-md-4">
@@ -18,9 +19,9 @@
             <h5 class="card-text text-justify">
                 <b>Harga : Rp {{ $dok->harga }}</b>
             </h5>
-            <a href="/transaksis" class="btn btn-success float-right">Pesan</a>
+            <a href="/transaksis" class="btn btn-success float-right shadow">Pesan</a>
         </form>
-    
+    </div>
     </div>
     </div>
     </div>

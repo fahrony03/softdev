@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-<div class="card">
+<div class="card shadow p-3">
     <div class="card-body">
     <h1>Form Pembayaran</h1>
     <hr>
@@ -20,7 +20,7 @@
       <input name="produk" required type="text" id="produk" class="form-control" placeholder="Produk"><br><br>
       <label for="title">Jumlah :</label><br>
       <input name="jumlah" required type="number" id="jumlah" class="form-control" placeholder="Jumlah"><br><br>
-      <input type="submit" class="btn btn-success" value="Kirim">
+      <input type="submit" class="btn btn-success shadow" value="Kirim">
       <br>
       <p><i>*Jika data yang diisi tidak lengkap kami tidak akan melakukan pengiriman barang</i></p>
     </form>

@@ -21,7 +21,7 @@
     <a href="#"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card shadow p-3">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 

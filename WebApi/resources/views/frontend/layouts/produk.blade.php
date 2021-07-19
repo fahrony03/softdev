@@ -58,9 +58,9 @@
                         <p><b>{{ $item->deskripsi }}</b></p>
                         <span class="badge badge-success">discount 50%</span>
                         <p class="card-text text-justify">
-                            <b>{{ $item->harga }}</b>
+                            <b>Rp.{{ $item->harga }}</b>
                         </p>
-                        <a href="{{ url('detailproduk', $item->id) }}" type="button" class="btn btn-outline-success"><b><i>Lihat produk</i></b></a>
+                        <a href="{{ url('detailproduk', $item->id) }}" type="button" class="btn btn-outline-success shadow"><b><i>Lihat produk ...</i></b></a>
                     </div>
                 </div>
             </div>
