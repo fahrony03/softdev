@@ -100,9 +100,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:singleLine="false"
-                                    android:text="Title"
+                                    android:text="Sektor Pertanian Disebut Jadi Penyelamat Ekonomi saat Pandemi"
                                     android:textAppearance="?android:attr/textAppearanceSmall"
-                                    android:textSize="12sp" />
+                                    android:textSize="12dp" />
 
                                 <TextView
                                     android:id="@+id/publishedAt"
@@ -110,7 +110,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:singleLine="true"
-                                    android:text="Time"
+                                    android:text="12 Juni 2021"
+                                    android:textColor="#F30202"
                                     android:textAppearance="?android:attr/textAppearanceSmall"
                                     android:textSize="8sp" />
 
