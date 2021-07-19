@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.SIPEKA">
-        <activity android:name=".DetailProduk"></activity>
+        <activity android:name=".DetailArtikel"></activity>
+        <activity android:name=".DetailProduk" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
