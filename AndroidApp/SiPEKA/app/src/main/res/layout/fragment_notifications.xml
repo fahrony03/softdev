@@ -38,6 +38,7 @@
                             android:cropToPadding="true"
                             android:src="@drawable/news" />
                 </LinearLayout>
+                
         </LinearLayout>
         <TextView
             android:id="@+id/tvTitle"
@@ -51,7 +52,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cvNews"
             android:layout_width="match_parent"
