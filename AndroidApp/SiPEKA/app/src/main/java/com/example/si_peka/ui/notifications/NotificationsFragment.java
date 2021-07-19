@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.GridView;
 
 import androidx.fragment.app.Fragment;
@@ -13,8 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.si_peka.R;
 import com.example.si_peka.adapter.NewsAdapter;
 
-public class NotificationsFragment extends Fragment {
+public class NotificationsFragment<AppCompatActivity> extends Fragment {
 
+    Button button;
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     RecyclerView.Adapter mAdapter;
@@ -30,13 +32,13 @@ public class NotificationsFragment extends Fragment {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView2);
         mRecyclerView.setHasFixedSize(true);
 
+
         mLayoutManager  = new GridLayoutManager(getActivity(),2);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mAdapter = new NewsAdapter();
         mRecyclerView.setAdapter(mAdapter);
-
-
         return view ;
     }
+
 }
