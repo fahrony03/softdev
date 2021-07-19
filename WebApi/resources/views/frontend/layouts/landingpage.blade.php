@@ -110,57 +110,57 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{asset('assets/img/sayur 1.jpg')}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <h5><b>Cara Suskes Bertani</b></h5>
-                            <p>Suskes Bertani di usia Muda</p>
-                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <h5><b>Manfaat sayur sawi bagi tubuh</b></h5>
+                            <p>Kandungan kandungan yang terdapat pada sayur sawi</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{asset('assets/img/sayur 2.jpg')}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <h5><b>Cara Suskes Bertani</b></h5>
-                            <p>Suskes Bertani di usia Muda</p>
-                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <h5><b>Manfaat wartel bagi kesehatan mata</b></h5>
+                            <p>Wortel dapat membantu meningkatkan kesehatan mata</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 3.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{asset('assets/img/sayur 3.jpg')}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <h5><b>Cara Suskes Bertani</b></h5>
-                            <p>Suskes Bertani di usia Muda</p>
-                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <h5><b>Cara menanam terong dalam pot</b></h5>
+                            <p>Menanam terong dalam pot membantu untuk mengheman lahan</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 4.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{asset('assets/img/sayur 4.jpg')}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <h5><b>Cara Suskes Bertani</b></h5>
-                            <p>Suskes Bertani di usia Muda</p>
-                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <h5><b>Manfaat sayur bayam</b></h5>
+                            <p>Manfaat sayur bayang beserta cara memasaknya</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{asset('assets/img/sayur 5.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{asset('assets/img/sayur 5.jpg')}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <h5><b>Cara Suskes Bertani</b></h5>
-                            <p>Suskes Bertani di usia Muda</p>
-                            <a href="/login" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <h5><b>Cara mngolah kacang tanah</b></h5>
+                            <p>Langkah-langkah menolah kacang tanah menjadi produk makanan</p>
+                            <a href="/login" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>
