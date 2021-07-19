@@ -115,6 +115,7 @@
                                     android:textAppearance="?android:attr/textAppearanceSmall"
                                     android:textSize="8sp" />
 
+                                
                                 <Button
                                     android:id="@+id/buttonOpen"
                                     android:layout_width="wrap_content"
