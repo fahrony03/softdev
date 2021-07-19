@@ -30,12 +30,12 @@ public class NotificationsFragment extends Fragment {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView2);
         mRecyclerView.setHasFixedSize(true);
 
+
         mLayoutManager  = new GridLayoutManager(getActivity(),2);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mAdapter = new NewsAdapter();
         mRecyclerView.setAdapter(mAdapter);
-
 
         return view ;
     }
