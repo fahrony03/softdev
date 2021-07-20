@@ -7,6 +7,8 @@
     <h1>Form Pembayaran</h1>
     <hr>
     <form action="{{ route('bayar')}}" method="post" enctype="multipart/form-data">
+    <p><b>Nomor Rekening (Bank BRI) : 650001005395505 (Nidha Kusumaningrum )</b></p>
+    <p><b> Ovo / Gopay / Shopeepay/ Dana : 081314726617 (Nidha Kusumaningrum )</b></p> <br>
     {{ csrf_field() }}
     <label for="gambar">Upload Bukti Transaksi</label>
       <input name="gambar" required type="file" id="gambar"><br><br>
