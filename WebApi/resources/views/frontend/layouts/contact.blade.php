@@ -26,7 +26,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hapus data</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Kirim Data</h5>
                   </div>
                   <div class="modal-body">
                     Apakah anda yakin ingin mengirim masukan?
