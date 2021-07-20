@@ -97,8 +97,8 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="left-content">
-              <p> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
+            <div>
+              <p style="text-align:center"> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
               <br>Yang memiliki keunggulan yaitu memiliki harga yang lebih miring dari pada yang lainnya,
               sayuran kami dijamin fresh karena bekerja sama langsung dengan SMK Pertanian Pembangunan 
               Negeri 1 Tegalampel Bondowoso, Pelanggan hanya perlu santai dirumah pesanan akan kami antar</p>
