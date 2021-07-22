@@ -12,6 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.si_peka.R;
 import com.example.si_peka.adapter.GridAdapter;
+import com.example.si_peka.adapter.SliderAdapter;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 
 /**
@@ -22,6 +26,13 @@ public class CartFragment extends Fragment {
         RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     RecyclerView.Adapter mAdapter;
+    SliderView sliderView;
+    int[] images = {R.drawable.sayur1,
+            R.drawable.sayur2,
+            R.drawable.sayur3,
+            R.drawable.sayur4,
+            R.drawable.sayur5};
+
     public CartFragment() {
         // Required empty public constructor
     }
@@ -39,6 +50,14 @@ public class CartFragment extends Fragment {
 
         mAdapter = new GridAdapter();
         mRecyclerView.setAdapter(mAdapter);
+
+        //slider
+        sliderView = (SliderView) view.findViewById(R.id.image_slider);
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
 
         return view ;
     }
