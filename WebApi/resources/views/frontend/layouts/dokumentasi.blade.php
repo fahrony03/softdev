@@ -29,13 +29,13 @@
             <div class="row row-cols-1 row-cols-md-3">
                 @foreach ($dtDokumentasi as $item)
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <img src="{{ asset($item->gambar)}}" class="card-img-top" alt="...">
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <img src="{{ asset($item->gambar)}}" class="img-thumbnail" alt="responsive image">
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                             <h5><b>{{ $item->judul }}</b></h5>
                             <p>{{ $item->caption}}</p>
-                            <a href="{{ url('detaildokumentasi', $item->id) }}" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                            <a href="{{ url('detaildokumentasi', $item->id) }}" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                         </div>
                     </div>
                 </div>

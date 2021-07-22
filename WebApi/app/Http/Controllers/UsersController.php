@@ -37,6 +37,13 @@ class UsersController extends Controller
         return view('backend.user',compact('dtUser'));
     }
 
+    public function forgetpassword()
+    {
+        // $dtUser = Users::latest()->get();
+        return view('backend.auth.forgetpassword');
+        // return view('backend.auth.forgetpassword',compact('dtUser'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

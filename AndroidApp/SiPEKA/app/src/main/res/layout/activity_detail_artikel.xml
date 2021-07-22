@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailArtikel">
+
+    <include
+        layout="@layout/appbar" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_share" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgtani"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_below="@+id/imageShare"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/berita1" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgtani"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="18 Juni 2021"
+        android:textSize="14sp"
+        android:textColor="#F10A0A"/>
+
+    <TextView
+        android:id="@+id/Penulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Penulis : Adreansyah Mulyanto"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pertanian_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:text="Kementan dan Jasindo Kolaborasi Genjot Asuransi Tani Berbasis Area"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanian_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Liputan6.com, Jakarta PT Asuransi Jasa Indonesia atau Asuransi Jasindo yang merupakan bagian dari Holding Perasuransian dan Penjaminan (Indonesia Financial Group) kembali berkolaborasi dengan Kementerian Pertanian untuk melakukan uji coba dengan menyasar para petani melalui Asuransi Usaha tani padi berbasis indeks hasil padi atau disebut Asuransi Usaha Tani Padi berbasis Indeks Hasil Panen Padi Berbasis Area (IHPPBA).
+Program Asuransi ini merupakan bagian dari Project of Capacity Development For The Implementation of Agricultral Insurance In The Republic of Indonesia (CDIAI) yang diinisiasi oleh BAPPENAS bekerjasama dengan JICA (Japan Indonesia Corporation Agency), Kementerian Pertanian, Kementerian Keuangan, dan OJK.
+Program bernama Asuransi Usaha Tani Padi berbasis Indeks Hasil Panen Padi Berbasis Area atau yang disebut AUTP berbasis IHPPBA tersebut resmi digelar pada Jumat 16 Juli 2021, melalui penandatanganan virtual perjanjian kerja sama (PKS) antara Asuransi Jasindo dengan Kementerian Pertanian."
+        android:textSize="20sp"/>
+</RelativeLayout>

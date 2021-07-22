@@ -51,16 +51,16 @@
         <div class="row row-cols-1 row-cols-md-3">
             @foreach ($dtProduk as $item)
             <div class="col mb-4">
-                <div class="card h-100">
-                    <img src="{{ asset($item->sampul)}}" class="img-responsive" alt="...">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <img src="{{ asset($item->sampul)}}" class="img-thumbnail" alt="responsive image">
                     <div class="card-body">
                         <h5 class="card-title">{{ $item->namaproduk }}</h5>
                         <p><b>{{ $item->deskripsi }}</b></p>
                         <span class="badge badge-success">discount 50%</span>
                         <p class="card-text text-justify">
-                            <b>{{ $item->harga }}</b>
+                            <b>Rp.{{ $item->harga }}</b>
                         </p>
-                        <a href="{{ url('detailproduk', $item->id) }}" type="button" class="btn btn-outline-success"><i>Lihat</i></a>
+                        <a href="{{ url('detailproduk', $item->id) }}" type="button" class="btn btn-outline-success shadow"><b><i>Lihat produk ...</i></b></a>
                     </div>
                 </div>
             </div>

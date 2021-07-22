@@ -50,7 +50,7 @@
                 </li>
             </ul>
             <span class="navbar-text">
-                <a href="/" class="btn btn-warning">Log Out</a>
+                <a href="/" class="btn btn-warning shadow">Log Out</a>
             </span>
           </div>
         </div>

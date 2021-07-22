@@ -33,25 +33,25 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         nama = new NewsItem();
         nama.setTanggal("19 Mei 2021");
         nama.setJudul("Ekspor Pertanian Tumbuh Positif, Kementan Sebut Sudah dalam Koridor");
-        nama.setThumbnail(R.drawable.berita);
+        nama.setThumbnail(R.drawable.berita2);
         mItems.add(nama);
 
         nama = new NewsItem();
         nama.setTanggal("19 Mei 2021");
         nama.setJudul("Ekspor Pertanian Tumbuh Positif, Kementan Sebut Sudah dalam Koridor");
-        nama.setThumbnail(R.drawable.berita);
+        nama.setThumbnail(R.drawable.berita3);
         mItems.add(nama);
 
         nama = new NewsItem();
         nama.setTanggal("19 Mei 2021");
         nama.setJudul("Ekspor Pertanian Tumbuh Positif, Kementan Sebut Sudah dalam Koridor");
-        nama.setThumbnail(R.drawable.berita);
+        nama.setThumbnail(R.drawable.berita4);
         mItems.add(nama);
 
         nama = new NewsItem();
         nama.setTanggal("19 Mei 2021");
         nama.setJudul("Ekspor Pertanian Tumbuh Positif, Kementan Sebut Sudah dalam Koridor");
-        nama.setThumbnail(R.drawable.berita);
+        nama.setThumbnail(R.drawable.berita5);
         mItems.add(nama);
     }
 

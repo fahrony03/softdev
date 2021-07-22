@@ -11,7 +11,7 @@
                            <h1><font color="green">UNDUH APLIKASI</font></h1>
                            <p>dengan menggunakan aplikasi ini kita dapat mempermudah menperoleh informasi seputar pertanian 
                         , membeli berbagai produk kami dimana saja dan kapan saja.</p>
-                        <div><button type="button" class="btn btn-success">Get App</button></div>
+                        <div><button type="button" class="btn btn-success shadow">Get App</button></div>
                         </div>
                      </div>
                      <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -43,14 +43,14 @@
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/transaksi.png')}}" /></i>
                      <h3>Pembayaran</h3>
-                     <p>Kami menyediakan opi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
+                     <p>Kami menyediakan opsi pembayaran ditempat dan juga opsi pembayaran dengan cara mengirim bukti transaksi</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="Soft-box">
                      <i><img src="{{asset('assets/img/pengiriman.png')}}" /></i>
                      <h3>Pengiriman</h3>
-                     <p>Kami menyediakan opi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
+                     <p>Kami menyediakan opsi pengiriman barang sampai di tempat(<i>dengan pengecualian</i>) dan juga langsung datang ke gerai kami</p>
                   </div>
                </div>
             </div>
@@ -65,13 +65,13 @@
         <div class="row row-cols-1 row-cols-md-3">
             @foreach ($dtInformasi as $item)
             <div class="col mb-4">
-                <div class="card">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
                     <img src="{{ asset($item->gambar)}}" class="img-thumbnail" alt="responsive image">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <h5><b>{{ $item->judul }}</b></h5>
                         <p>{{ $item->caption}}</p>
-                        <a href="{{ url('detailinformasi', $item->id) }}" type="button" class="btn btn-outline-success"><i>Baca</i></a>
+                        <a href="{{ url('detailinformasi', $item->id) }}" type="button" class="btn btn-outline-success"><b><i>Baca</i></b></a>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="left-content">
-              <p> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
+            <div>
+              <p style="text-align:center"> Aplikasi ini adalah aplikasi informasi pertanian, dan penjualan produk pertanian.<br>
               <br>Yang memiliki keunggulan yaitu memiliki harga yang lebih miring dari pada yang lainnya,
               sayuran kami dijamin fresh karena bekerja sama langsung dengan SMK Pertanian Pembangunan 
               Negeri 1 Tegalampel Bondowoso, Pelanggan hanya perlu santai dirumah pesanan akan kami antar</p>
