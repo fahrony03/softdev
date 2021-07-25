@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="20dp"
-        android:text="Kategori 1"/>
+        android:text="Kategori 2"/>
     <!--Deskripsi-->
 
 </RelativeLayout>
