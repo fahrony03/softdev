@@ -22,7 +22,7 @@
         android:textStyle="bold"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="20dp"
-        android:text="Bayam"/>
+        android:text="Terong"/>
     <!--Deskripsi-->
     <TextView
         android:id="@+id/detailproduk2"

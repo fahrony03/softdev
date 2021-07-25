@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="339dp"
         android:background="@color/white"
-        android:src="@drawable/sayur4" />
+        android:src="@drawable/sayur5" />
     <!--Bayam-->
     <TextView
         android:id="@+id/judulsayur"
@@ -21,7 +21,7 @@
         android:textStyle="bold"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="20dp"
-        android:text="Sawi"/>
+        android:text="Kacang Tanah"/>
     <!--Deskripsi-->
     <TextView
         android:id="@+id/detailproduk3"

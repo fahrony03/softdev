@@ -6,17 +6,25 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.si_peka.DetailArtikel;
+import com.example.si_peka.DetailArtikel1;
+import com.example.si_peka.DetailArtikel2;
 import com.example.si_peka.DetailKategori1;
 import com.example.si_peka.DetailKategori2;
 import com.example.si_peka.DetailKategori3;
 import com.example.si_peka.DetailKategori4;
 import com.example.si_peka.DetailProduk;
+import com.example.si_peka.DetailProduk1;
+import com.example.si_peka.DetailProduk2;
+import com.example.si_peka.DetailProduk3;
+import com.example.si_peka.DetailProduk4;
 import com.example.si_peka.R;
 
 public class HomeFragment extends Fragment {
@@ -32,6 +40,8 @@ public class HomeFragment extends Fragment {
     private LinearLayout prod3;
     private LinearLayout prod4;
     private LinearLayout prod5;
+    private LinearLayout open1;
+    private LinearLayout open2;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,6 +56,12 @@ public class HomeFragment extends Fragment {
         prod3 = (LinearLayout) rootView.findViewById(R.id.prod3);
         prod4 = (LinearLayout) rootView.findViewById(R.id.prod4);
         prod5 = (LinearLayout) rootView.findViewById(R.id.prod5);
+
+        open1 = (LinearLayout) rootView.findViewById(R.id.open1);
+        open2 = (LinearLayout) rootView.findViewById(R.id.open2);
+
+        Button button = rootView.findViewById(R.id.btnSponsor);
+
 
         ktg1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +117,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"DetailProduk", Toast.LENGTH_SHORT).show();
 
-                Intent gopindah = new Intent(getActivity(), DetailProduk.class);
+                Intent gopindah = new Intent(getActivity(), DetailProduk1.class);
                 startActivity(gopindah);
             }
         });
@@ -110,7 +126,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"DetailProduk", Toast.LENGTH_SHORT).show();
 
-                Intent gopindah = new Intent(getActivity(), DetailProduk.class);
+                Intent gopindah = new Intent(getActivity(), DetailProduk2.class);
                 startActivity(gopindah);
             }
         });
@@ -119,7 +135,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"DetailProduk", Toast.LENGTH_SHORT).show();
 
-                Intent gopindah = new Intent(getActivity(), DetailProduk.class);
+                Intent gopindah = new Intent(getActivity(), DetailProduk3.class);
                 startActivity(gopindah);
             }
         });
@@ -128,8 +144,34 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"DetailProduk", Toast.LENGTH_SHORT).show();
 
-                Intent gopindah = new Intent(getActivity(), DetailProduk.class);
+                Intent gopindah = new Intent(getActivity(), DetailProduk4.class);
                 startActivity(gopindah);
+            }
+        });
+        open1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"DetailArtikel", Toast.LENGTH_SHORT).show();
+
+                Intent gopindah = new Intent(getActivity(), DetailArtikel1.class);
+                startActivity(gopindah);
+            }
+        });
+        open2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"DetailArtikel", Toast.LENGTH_SHORT).show();
+
+                Intent gopindah = new Intent(getActivity(), DetailArtikel2.class);
+                startActivity(gopindah);
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), DetailProduk.class);
+                startActivity(intent);
             }
         });
     return rootView;
