@@ -97,11 +97,11 @@
                     android:padding="20dp">
 
                     <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="42dp"
+                        android:layout_height="30dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
-                        android:src="@drawable/sayur3" />
+                        android:src="@drawable/logo" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -137,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
-                        android:src="@drawable/sayur3" />
+                        android:src="@drawable/logo" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -173,7 +173,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
-                        android:src="@drawable/sayur3" />
+                        android:src="@drawable/logo" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
-                        android:src="@drawable/sayur3" />
+                        android:src="@drawable/logo" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -286,7 +286,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="false"
-                                    android:src="@drawable/sayur3" />
+                                    android:src="@drawable/sayur1" />
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
@@ -299,13 +299,13 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Sawi"
                                 android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Sayur"
                                 android:textSize="10dp" />
 
                             <TextView
@@ -343,7 +343,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="false"
-                                    android:src="@drawable/sayur3" />
+                                    android:src="@drawable/sayur2" />
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
@@ -356,13 +356,13 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Wortel"
                                 android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Sayur"
                                 android:textSize="10dp" />
 
                             <TextView
@@ -416,7 +416,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Sayur"
                                 android:textSize="10dp" />
 
                             <TextView
@@ -451,7 +451,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="false"
-                                    android:src="@drawable/sayur3" />
+                                    android:src="@drawable/sayur4" />
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
@@ -464,13 +464,13 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Bayam"
                                 android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Sayur"
                                 android:textSize="10dp" />
 
                             <TextView
@@ -505,7 +505,7 @@
                                     android:layout_height="match_parent"
                                     android:adjustViewBounds="true"
                                     android:cropToPadding="false"
-                                    android:src="@drawable/sayur3" />
+                                    android:src="@drawable/sayur5" />
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
@@ -518,13 +518,13 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Kacang Tanah"
                                 android:textSize="12dp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Terong Segar"
+                                android:text="Biji - Bijian"
                                 android:textSize="10dp" />
 
                             <TextView
@@ -546,7 +546,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Hot News"
+        android:text="Artikel Terbaru"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
