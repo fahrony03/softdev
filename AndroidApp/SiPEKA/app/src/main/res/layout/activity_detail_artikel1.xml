@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailArtikel">
+
+    <include
+        layout="@layout/appbar" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_share" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgtani"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_below="@+id/imageShare"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/beritatani" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgtani"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="1 Mei 2021"
+        android:textSize="14sp"
+        android:textColor="#F10A0A"/>
+
+    <TextView
+        android:id="@+id/Penulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Penulis : NURSAITI (18052036)"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pertanian_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:text="Dampak Sektor Pertanian Indonesia di Masa Pandemi Wabah COVID-19"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanian_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pokok Permasalahan
+
+dampak Covid 19 tidak bisa dianggap reme, karena sangat berdampak juga dalam sektor pertanian, salah satu imbasnya yaitu terganggunya produksi petani di seluruh daerah (Komisi IV DPR RI Siaran Pers 23/4/2020).
+
+Setidaknya ada 6 dampak mempengaruhi sektor pertanian:
+
+1.  Harga Pasar dan Pertanian,
+
+Ketika melihat meningkatnya tingkat kepedulian, rekomendasi untuk “jarak sosial” mengurangi perjalanan, mengurangi keramaian, penutupan dan praktik perlindungan lainnya untuk memperlambat penyebaran Covid 19, konsumen akan membuat kesulitan sehingga akan mempengaruhi stabilitas supply dan demand barang dan jasa serta harga yang kemungkinan meningkat.
+
+2. Rantai Paskokan Panggan Melambat dan Kekurangan
+
+           karena penyaluran logistik pertanian terganggu.
+
+3. Kesehatan Petani
+
+  Petani adalah populasi relatif orang tua dibandingkan dengan pupulasi pekerja umum. Sensus penduduk 2017 menunjukan usia rata-rat petani  hampir 58 tahuan usianya. Operator pertanian utama berusia 65 tahun ke atas 11,7%. Jika Covid 19 ini tidak terbendung hingga menembus petani dampaknya menimbulkan Kepanikan masyarakat bawah akan menambah keterpurukan produksi pangan.
+
+Solusi yang Diharapkan
+
+Beberapa harapan petani ditengah wabahnya virus Corona ini tetap dapat melaksanakan aktivitas bertani seperti biasanya dan selalu mendapat edukasi dari berbagai instansi mengenai wabah virus corona dan penanganan dalam mengurangi penyebaran virus corona ini. Dan para petani menginginkan untuk diadakan pos-pos penanganan virus corona di setiap desa-desa yang mereka tempati.
+
+Hendaknya  pemerintah pusat dan pemerintah daerah terus berkontribusi memastikan pertanian berjalan lancar dan aman terkhusus bahan pangan dan bahan pokok,  terutama dari berbagai kondisi pertanian seperti terjadinya serangan OPT.
+
+Mempercepat merealisasikan kebijakan pemerintah dalam menjaga Keberlanjutan pertanian dalam negeri.  Melalui Kementrian Pertanian telah mengeluarkan Surat Edaran Sekjen Kementrian Pertanian No. 1056/SE/RC.10/03/2020 tentang Strategi dalam Pencegahan dan Perlindungan Covid 19."
+        android:textSize="20sp"/>
+</RelativeLayout>

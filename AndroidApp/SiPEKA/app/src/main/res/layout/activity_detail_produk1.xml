@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:src="@drawable/sayur1" />
+        android:src="@drawable/sayur2" />
     <!--Bayam-->
     <TextView
         android:id="@+id/judulsayur"
@@ -24,7 +24,7 @@
         android:text="Bayam"/>
     <!--Deskripsi-->
     <TextView
-        android:id="@+id/detailproduk"
+        android:id="@+id/detailproduk1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/judulsayur"

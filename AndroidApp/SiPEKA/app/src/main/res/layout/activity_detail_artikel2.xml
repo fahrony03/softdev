@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailArtikel">
+
+    <include
+        layout="@layout/appbar" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginEnd="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_share" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgtani"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_below="@+id/imageShare"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/beritatani2" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgtani"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="15 Juli 2021"
+        android:textSize="14sp"
+        android:textColor="#F10A0A"/>
+
+    <TextView
+        android:id="@+id/Penulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Penulis : Erika Dyah"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pertanian_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:text="Mentan: Di Seluruh Indonesia Tidak Ada Hari Tanpa Panen Padi "
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_pertanian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertanian_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Jakarta - Menteri Pertanian Syahrul Yasin Limpo kembali melakukan panen padi di Kabupaten Bandung. Dia mengatakan meski di tengah pandemi COVID-19 yang masih berlangsung, sektor pertanian tetap mampu menjamin stok beras nasional aman.
+‘Alhamdulillah di seluruh Indonesia tidak ada hari tanpa panen (padi), tidak ada hari tanpa menanam. Jadi panen dan menanam kita bisa lihat setiap saat di semua daerah saat ini. Kita berharap lahan yang ada ini tidak boleh nganggur terlalu lama, tidak ada lahan yang nganggur lebih dari satu bulan langsung ditanam, kita kejar air dan hujan yang masih ada,’ ujar Syahrul dalam keterangan tertulis, Minggu (25/7/2021).
+Syahrul menegaskan para Menteri untuk tidak terima dan percaya data saja. Ia menyebutkan hal ini sesuai perintah Presiden Jokowi yang meminta pejabat turun ke lapangan untuk melakukan validasi secara langsung dan faktual terkait ketersediaan pangan, khususnya beras.
+‘Dan hari ini bahkan setiap minggu saya turun bersama jajaran ketemu para gubernur, bupati untuk menanyakan ketersediaan pangan khususnya beras dalam situasi COVID atau dalam situasi apapun,’ ungkapnya.
+
+"
+        android:textSize="20sp"/>
+</RelativeLayout>
