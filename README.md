@@ -10,3 +10,4 @@
 - laravel new example-app = buat folder yang mau diinstal laravel
 - cd example-app = buat buka folder yg dibuat
 - php artisan serve = perintah yang digunakan untuk menjalankan aplikasi pada localhost
+-
